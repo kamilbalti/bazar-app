@@ -1,0 +1,108 @@
+.FlashDealDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 55px 10px;
+}
+.FlashRowDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.flashBox{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: white;
+    margin: 0 12px;
+    box-shadow: 0 1px 3px rgba(3, 0, 71, 0.09);
+    border-bottom: 2px solid rgba(3, 0, 71, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.flashImg{
+    width: 100%;
+}
+.flashHead{
+    font-size: 26px;
+    font-weight: bolder;
+}
+.flashIcon{
+    font-size: 24px;
+    margin: 0 7px;
+    color: rgb(210, 63, 87);
+}
+.headingMainDiv{
+    margin-bottom: 23px;
+    margin-left: 13px;
+}
+.fullWidth{
+    display: flex;
+    width: 100%;
+    padding: 0 20px 0 7px;
+}
+.carousalDiv{
+    width: 200%;
+    transition: 0.3s ease;
+}
+.carousalDiv2{
+    width: 166.67%;
+    transition: 0.3s ease;
+}
+.div80{
+    /* position: relative; */
+    width: 100%;
+    overflow: hidden;
+    z-index: 9;
+}
+.carArrow{
+    position: absolute;
+    top: 44.5%;
+    font-size: 40px;
+    border-radius: 100%;
+    color: white;
+    fill: currentColor;
+    padding: 10px;
+    background-color: #0F3460;
+    font-weight: 800;
+    z-index: 10;
+}
+.carLeft{
+    left: 0;
+}
+.carRight{
+    right: 0;
+}
+.flashRelative{
+    position: relative;
+}
+.offPrice{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgb(210, 63, 87);
+    font-size: 10px;
+    padding: 5px 11px;
+    border-radius: 20px;
+}
+.starDiv{
+    font-size: 18px;
+    color: #faaf00;
+    fill: currentColor;
+}
+.boxData{
+    padding: 10px 0 17px;
+}
+.boxDataChild{
+    padding: 5px 15px 0;
+}
+.newPrice{
+    font-size: 14px;
+    color: rgb(210, 63, 87);
+    padding-right: 9px;
+}
+.oldPrice{
+    font-size: 14px;
+    color: gray;
+    text-decoration: line-through;
+}

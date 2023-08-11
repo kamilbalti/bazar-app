@@ -1,0 +1,26 @@
+.newArrivalMainDiv{
+    padding: 10px 29px;
+    /* font-size: 30px; */
+}
+.newIcon{
+    width: 30px !important;
+    /* font-size: 10px !important; */
+}
+.newArrHead{
+    margin-left: 6px;
+}
+.newArrHeadDiv{
+    margin-bottom: 12px;
+}
+.newArrPrice{
+    padding: 0;
+}
+.BigDiscountDiv{
+    padding: 62px 5px 0 10px;
+}
+.ThirdCarDiv{
+    width: 16.667%;
+}
+.ThirdCarMainDiv{
+    width: 150%;
+}

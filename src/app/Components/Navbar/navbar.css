@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--background-start-rgb: none !important;
+}
+body{
+    font-family: '__Open_Sans_c8a2b8','__Open_Sans_Fallback_c8a2b8';
+}
+.blueBgColor{
+    background-color: #2B3445;
+    height: 40px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 59px;
+    color:  white !important;
+}
+.navbar{
+    border-bottom: 1px solid #F3F5F9;
+}
+.firstNavParaDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bgRedBut{
+    font-family: sans-serif;
+    font-weight: 800 !important;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(210, 63, 87);
+    border-radius: 12px;
+    width: fit-content;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 12px;
+}
+.shipNavPara{
+    color: white;
+    font-size: 12px;
+    margin: 0 8px;
+    /* font-family: '__Open_Sans_c8a2b8', sans-serif; */
+    /* font-family: '__Open_Sans_c8a2b8 , __Open_Sans_Fallback_c8a2b8'; */
+}
+.langDiv{
+    background-color: #2B3445;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 12px;
+    margin-right: 11px !important;
+}
+.multiIcon{
+    color: white !important;
+    fill: currentColor;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.whiteBgColor{
+    background-color: white;
+    padding: 18px 59px;
+    display: flex;
+    flex-direction: row;
+}
+.nav3{
+    padding: 9px 59px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+.butIcon{
+    color: black;
+    font-size: 20px;
+}
+.left{
+    margin: 4px 2px;
+    font-size: 12px;
+}
+.categories{
+    font-family: 'Open sans', sans-serif;
+    display: flex;
+    font-size: 15px;
+    color: gray;
+    padding: 10px 8px;
+}
+.catPara{
+    padding: 0 140px 0 9px;
+}
+.noBorder{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 474px;
+    color: #2B3445;
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* outline: 3px solid rgb(210, 63, 87); */
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #2B3445;
+    opacity: 0.8;
+}   
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.catHead{
+    height: 100%;
+    width: fit-content;
+    font-size: 14px;
+    /* min-width: 180px; */
+    padding: 0 25px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #F6F9FC;
+    border-left: 1px solid rgb(220, 220, 220);
+}
+.centerPara{
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    padding: 0 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    font-size: 18px;
+}
+.bazarPic{
+    margin-right: 110px;
+}
+.catDownBut{
+    padding-top: 3px;
+    margin-left: 4px;
+    margin-right: -6px;
+    font-size: 16px;
+}
+.twoIconDiv{
+    font-size: 22px;
+}
+.navMainIcon{
+    background-color: #F6F9FC;
+    padding: 10px;
+    border-radius: 100%;
+    margin-left: 15px;
+    height: 45px;
+}
+.linkPara{
+    color: #2B3445;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 33px;
+}
+.allNavDownIcon{
+    color: rgb(180, 180, 180);
+    padding-top: 6px;
+    padding-left: 4px;
+}

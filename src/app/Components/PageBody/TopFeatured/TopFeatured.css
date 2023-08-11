@@ -1,0 +1,78 @@
+.TopFeaturedDiv{
+    padding: 40px 30px;
+    gap: 32px;
+}
+.TopFeaturedHead{
+    margin-bottom: 20px;
+}
+.TopIcon{
+    color: orange !important;
+    fill: currentColor;
+}
+.TopRatingDiv{
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(3, 0, 71, 0.09);
+    border-radius: 5px;
+}
+.TopBox{
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.zeroQuantity{
+    color: black;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.newPrice2{
+    font-size: 14px;
+    color: rgb(210, 63, 87);
+}
+.TopRatingStars{
+    padding-top: 10px;
+}
+.TopItemName{
+    font-size: 14px;
+    padding: 7.5px 0;
+}
+.featuredDiv{
+    background-color: white;
+    padding: 16px;
+    gap: 25px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(3, 0, 71, 0.09);
+}
+.featuredChildDiv{
+    font-size: 14px;
+    border-radius: 10px;
+}
+.TopRatingMainDiv{
+    width: 50%;
+}
+.FeaturedBrandMainDiv{
+    width: 50%;
+}
+.featuredPara{
+    margin-top: 6px;
+}
+.bigDiscHeadDiv{
+    margin-left: 12px;
+    margin-bottom: 16px !important;
+}
+.bigDiscIcon{
+    font-size: 30px !important;
+    margin: 4px;
+}
+.ThirdCarDiv{
+    padding: 16px;
+}
+
+.ThirdCarImg:hover{
+    background-color: rgba(128, 128, 128, 0.6);
+    border-radius: 10px;
+}
+.ThirdCarPara{
+    padding: 8px 0 4px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}

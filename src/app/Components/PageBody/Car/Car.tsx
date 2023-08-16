@@ -9,14 +9,6 @@ const Car = () => {
         <>
             <ThreeBox data={CarsData} miniData={MiniCarsData} head={"Cars"}/>
         </>
-        // <div className="FlashRowDiv">
-        //     <MiniDiv data={MiniCarsData}/>
-        //     {
-        //         CarsData.map((item: any, index: any) => 
-        //             <Box item={item}/>
-        //         )
-        //     }
-        // </div>
     )
 }
 export default Car

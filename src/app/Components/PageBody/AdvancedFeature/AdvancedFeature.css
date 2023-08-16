@@ -1,0 +1,32 @@
+.AdvancedFeatureMainDiv{
+    padding: 44px 16px 55px;
+    display: flex;
+        /* flex-direction: column; */
+    /* justify-content: center; */
+}
+.AdvancedFeatureImg{
+    font-size: 62px;
+    /* width: inherit; */
+    padding: 16px;
+    border-radius: 50%;
+    /* width: 0px; */
+    background-color: rgb(240, 240, 240);
+}
+.AdvancedFeatureDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px 50px 48px;
+}
+.AdvancedFeatureHead{
+    margin: 22px 0 10px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.AdvancedFeaturePara{
+    color: rgba(128, 128, 128, 0.8);
+    font-size: 14px;
+    /* margin-top: 2px; */
+    line-height: 1.5;
+}

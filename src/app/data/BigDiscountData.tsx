@@ -25,7 +25,7 @@ export const BigDiscountData: any = [
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FElectronics%2F12.SonyBGB.png&w=2048&q=75`,
-        name: "Tony RGB",
+        name: "Tony BGB",
         delVal: "$284.00",
         newVal: "$269.80",
       },

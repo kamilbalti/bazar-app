@@ -1,22 +1,19 @@
-import { BsGoogle, BsInstagram } from "react-icons/bs"
-import { CgTwitter, CgFacebook, CgYoutube } from "react-icons/cg"
-// import { AiOutlineInstagram, AiFillGoogleCircle } from "react-icons/ai"
-const SecondFootCol = ({Obj}: any) => {
+import { CgTwitter, CgFacebook } from "react-icons/cg"
+import { AiOutlineInstagram, AiOutlineGoogle, AiOutlineYoutube } from "react-icons/ai"
+const SecondFootCol = ({Obj, className}: any) => {
     return(
-        <div>
-            <h2>{Obj?.head}</h2>
+        <div className={className}>
+            <h2 className="SecondFootHead">{Obj?.head}</h2>
             {Obj?.arr?.map((item: any, index: number) => 
-            <div>
-                <p>{item}</p>
-            </div>
+                <p className="SecondFootPara">{item}</p>
             )}
         {Obj?.icon?
-        <div>
-            <CgFacebook />
-            <CgTwitter />
-            <CgYoutube />
-            <BsGoogle />
-            <BsInstagram />
+        <div className="FooterAllSocialIcons">
+            <CgFacebook className="FooterSocialIcons"/>
+            <CgTwitter className="FooterSocialIcons"/>
+            <AiOutlineYoutube className="FooterSocialIcons"/>
+            <AiOutlineGoogle className="FooterSocialIcons"/>
+            <AiOutlineInstagram className="FooterSocialIcons"/>
         </div> 
         : false}
         </div>

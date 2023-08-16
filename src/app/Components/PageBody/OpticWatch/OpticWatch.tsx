@@ -5,7 +5,7 @@ import { MiniOpticWatchData } from "@/app/data/MiniOpticWatchData"
 const OpticWatch = () => {
     return(
         <>
-        <ThreeBox data={OpticWatchData} miniData={MiniOpticWatchData} head={"Optics / Watch"} ind={6}/>        
+        <ThreeBox data={OpticWatchData} miniData={MiniOpticWatchData} head={"Optics / Watch"} ind={5}/>        
         </>
         // <div></div>
     )

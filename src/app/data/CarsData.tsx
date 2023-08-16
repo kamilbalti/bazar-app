@@ -38,7 +38,7 @@ export const CarsData: any = [
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FAutomotive%2F6.Ford2020.png&w=1920&q=75`,
         name: "Lord 2020",
         delVal: "$117.00",
-        newVal: "$109.98.00",
+        newVal: "$109.98",
         off: "6% off",
       },
 ]

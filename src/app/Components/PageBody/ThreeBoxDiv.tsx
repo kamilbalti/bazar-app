@@ -1,18 +1,20 @@
-// import { CarsData } from "@/app/data/CarsData"
 import MiniDiv from "./MiniDiv"
 import Box from "./Box"
-// import { MiniCarsData } from "@/app/data/MiniCarsData"
 
 const ThreeBox = ({data, miniData, head, ind}: any) => {
     return(
-        <div className="FlashRowDiv">
+        <div className="FlashRowDiv ThreeBoxMainDiv">
             <MiniDiv data={miniData} ind={ind}/>
-            <h1>{head}</h1>
+            <div className="ThreeBoxDiv">
+            <h1 className="ThreeBoxHeading">{head}</h1>
+            <div className="FlashRowDiv wrap">
             {   
                 data?.map((item: any, index: number) => 
-                    <Box item={item}/>
+                <Box item={item} check={'flashBox2'}/>
                 )
             }
+            </div>
+            </div>
         </div>
     )
 }

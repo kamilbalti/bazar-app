@@ -1,0 +1,24 @@
+.CategoryHeadDiv{
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+.CategoryHead{
+    font-size: 26px;
+}
+.AllCategoriesMainDiv{
+    padding: 50px 0 0 18px;
+}
+.AllCatWhiteBg{
+    width: 14.6% !important;
+    margin: 12px;
+    background-color: white;
+    padding: 12px 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(3, 0, 71, 0.09);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}

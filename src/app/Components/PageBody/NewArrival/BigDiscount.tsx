@@ -1,6 +1,5 @@
-import { BigDiscountData } from "@/app/data/BigDiscountData"
 import ThirdCarousal from "./ThirdCarousal"
-import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineGift } from "react-icons/ai"
+import { AiOutlineGift } from "react-icons/ai"
 
 const BigDiscount = () => {
     return(

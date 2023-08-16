@@ -2,3 +2,17 @@
     background-color: #F6F9FC;
     padding: 0 30px;
 }
+.TwoImgDiv{
+    width: 100%;
+    padding: 55px 29px 10px 29px;
+    height: auto;
+    display: flex;
+}
+.firstImg{
+    width: 33%;
+    padding-right: 12px;
+}
+.secondImg{
+    width: 67%;
+    padding-left: 12px;
+}

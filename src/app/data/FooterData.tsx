@@ -23,7 +23,7 @@ export const ForthFootColData: any = {
         arr: [
             "70 Washington Square South, New York, NY 10012, United States",
             "Email: uilib.help@gmail.com",
-            "Phone: +1 1123456780"
+            "Phone: +1 1123 456 780"
         ],
         icon: true
 }

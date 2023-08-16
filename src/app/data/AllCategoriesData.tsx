@@ -1,18 +1,14 @@
 export const AllCategoriesData: any = [
         {
-        name: "Automobile", 
-        icon: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F12.Xiaomimiband2.png&w=64&q=75`,
-      },
-      {
-        name: "Car", 
+        name: "Automobile",
         icon: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FClothes%2F7.DenimClassicBlueJeans.png&w=64&q=75`,
       },
       {
-        name: "Fashion", 
+        name: "Car", 
         icon: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FClothes%2F20.GrayOvercoatWomen.png&w=64&q=75`,
       },
       {
-        name: "Electronics", 
+        name: "Fashion", 
         icon: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FJewellery%2F8.IndianPearlThreadEarrings.png&w=64&q=75`,
       },
       {

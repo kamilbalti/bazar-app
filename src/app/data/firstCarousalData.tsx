@@ -1,5 +1,6 @@
   export const FirstCarousalData: any = [
             {
+              // ImgSrc: `/../../AllPic/flash shoe.webp`,
               ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fflash-1.png&w=3840&q=75`,
               name: "NikeCourt Zoom Vapor Cage",
               delVal: "$250.00", 
@@ -17,7 +18,7 @@
             },
             {
               ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fflash-3.png&w=3840&q=75`,
-              name: "Iphone 13 Pro Max",
+              name: "IPhone 13 Pro Max",
               delVal: "$150.00",
               newVal: "$108.00",
               off: "28% off",
@@ -49,7 +50,7 @@
             },
             {
               ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fflash-3.png&w=3840&q=75`,
-              name: "Iphone 13 Pro Max",
+              name: "IPhone 13 Pro Max",
               delVal: "$150.00",
               newVal: "$108.00",
               off: "28% off",

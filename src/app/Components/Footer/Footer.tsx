@@ -14,15 +14,25 @@ const Footer = () => {
                     at amet.
                 </p>
                 <div className="FlashRowDiv">
-                    <button className="footerButton"><BiLogoPlayStore /><div><p>Get it on</p><b>Google Play</b></div></button>
-                    <button className="footerButton"><FaAppStoreIos /><div><p>Download on the</p><b>App Store</b></div></button>
+                    <button className="footerButton">
+                        <BiLogoPlayStore className="footerButIcon" />
+                    <div className="footerButtonParaDiv">
+                        <span className="footerButtonSpan">Get it on</span>
+                        <b className="footerAppIcon">Google Play</b></div>
+                    </button>
+                    <button className="footerButton">
+                        <FaAppStoreIos className="footerButIcon" />
+                    <div className="footerButtonParaDiv">
+                        <span className="footerButtonSpan">Download on the</span>
+                        <b className="footerAppIcon">App Store</b></div>
+                    </button>
                 </div>
             </div>
             {
                 <>
-                    <SecondFootCol Obj={SecondFootColData}/>
-                    <SecondFootCol Obj={ThirdFootColData}/>
-                    <SecondFootCol Obj={ForthFootColData}/>
+                    <SecondFootCol className={"SecondFootCol"} Obj={SecondFootColData}/>
+                    <SecondFootCol className={"SecondFootCol ThirdFootCol"} Obj={ThirdFootColData}/>
+                    <SecondFootCol className={"SecondFootCol ForthFootCol"} Obj={ForthFootColData}/>
                 </>
             }
         </div>

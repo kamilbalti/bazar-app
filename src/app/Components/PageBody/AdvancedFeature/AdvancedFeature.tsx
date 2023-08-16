@@ -1,16 +1,17 @@
 import { AdvancedFeatureData } from "@/app/data/AdvancedFeatureData"
+import "./AdvancedFeature.css"
 const AdvancedFeature = () => {
     return(
-        <div className="FlashRowDiv">
+        <div className="FlashRowDiv wrap MoreForBoxDiv AdvancedFeatureMainDiv">
             {AdvancedFeatureData?.map((item: any, index: number) =>
-                <div>
+                <div className="flashBox flashBox3  AdvancedFeatureDiv">
                 {
-                item.icon?
-                <img width={"50px"} src={item.icon}/>:
+                // item.icon?
+                // <img className="AdvancedFeatureImg" width={"50px"} src={item.icon}/>:
                 item.img
                 }
-                <h2>{item.heading}</h2>
-                <p>{item.Intro}</p>
+                <h4 className="AdvancedFeatureHead">{item.heading}</h4>
+                <p className="AdvancedFeaturePara">{item.Intro}</p>
                 </div>
             )}
         </div>

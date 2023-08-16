@@ -1,0 +1,20 @@
+.MoreForYouMainDiv{
+    padding: 52px 18px 0;
+}
+.MoreForHead{
+    font-size: 24px;
+    margin-left: 11px;
+    margin-bottom: 9px;
+}
+.MoreForBoxDiv{
+    width: 100%;
+    /* width: calc(100% + 96px); */
+}
+.MoreForYouBoxDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flashBox3{
+    width: calc(25% - 24px );
+}

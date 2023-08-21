@@ -1,0 +1,24 @@
+.CartMainDiv{
+    width: 27%;
+    /* right: 0; */
+    /* top: 0; */
+    height: 100%;
+    background-color: white;
+    z-index: 30;
+    overflow: hidden;
+}
+.cartFixed{
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    height: 100%;
+    width: 100%;
+}
+.bgGrayBody{
+    width: 73%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.rowFirstItemsDiv{
+    display: flex;
+}

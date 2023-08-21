@@ -1,13 +1,42 @@
+'use client'
+import React, { useEffect, useState } from "react";
 import Navbar1 from "./navbar1"
 import Navbar2 from "./navbar2"
 import Navbar3 from "./navbar3"
 
 const Navbar = () => {
+    const [ check, setCheck ]: any = useState(false)
+    window.onscroll = () => {
+        if(window.scrollY >= 360 && check != 'Complete')
+        {
+            setCheck("true")
+            setTimeout(() => {
+                if(window.scrollY >= 360 && check != 'Complete')
+                setCheck("Complete")
+            },300)
+        }
+        if(window.scrollY >= 360 && check == "complete")
+        setCheck("Complete")
+        else if(window.scrollY < 360 || window.scrollY == 0){
+        setCheck(false)
+    }
+    }
+    useEffect(() => {
+        if(window.scrollY >= 360)
+        {
+            setCheck("true")
+            setTimeout(() => {
+                setCheck("Complete")
+            },300)
+        }
+        else if(window.scrollY < 360)
+            setCheck(false)
+        },[])
     return(
     <div className="navbar">
         <Navbar1 />
-        <Navbar2 />
-        <Navbar3 />
+        <Navbar2 check={check}/>
+        <Navbar3 check={check}/>
     </div>
     )
 }

@@ -2,14 +2,13 @@ import FirstCarousal from "../FirstCarousal"
 import { FirstCarousalData } from "@/app/data/firstCarousalData"
 import "./FlashDeal.css"
 import {IoIosFlash} from "react-icons/io"
+import Heading from "../Heading"
 const FlashDeal = () => {
     return(
         <div className="FlashDealDiv">
-            <div className="row headingMainDiv">
-            <IoIosFlash className="flashIcon"/>
-            {/* <img src="https://cdn-icons-png.flaticon.com/128/252/252590.png" /> */}
-            <h2 className="flashHead">Flash Deals</h2>
-            </div>
+            <Heading icon={<IoIosFlash className="flashIcon"/>} name="Flash Deal" nameClass="flashHead"
+            divClass="row headingMainDiv" viewHead={'viewHeadDiv'}
+            />
             <div>
                 <FirstCarousal />
             </div>

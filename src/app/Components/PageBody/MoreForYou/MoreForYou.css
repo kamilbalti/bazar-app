@@ -18,3 +18,7 @@
 .flashBox3{
     width: calc(25% - 24px );
 }
+.MoreForHeadDiv{
+    display: flex;
+    justify-content: space-between;
+}

@@ -10,6 +10,8 @@
     margin-left: 6px;
 }
 .newArrHeadDiv{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 12px;
 }
 .newArrPrice{

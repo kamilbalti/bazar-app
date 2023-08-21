@@ -3,6 +3,8 @@
     gap: 32px;
 }
 .TopFeaturedHead{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 .TopIcon{
@@ -75,4 +77,28 @@
     padding: 8px 0 4px;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 1150px){
+    .TopFeaturedDiv{
+        display: flex;
+        flex-direction: column;      
+        padding: 40px 20px;
+    }
+    .TopRatingMainDiv{
+        width: 100%;
+    }
+    .FeaturedBrandMainDiv{
+        width: 100%;
+    }
+    .TopRatingStars{
+        display: flex;
+        justify-content: center;
+    }
+    .featuredChildDiv{
+        width: 48.5%;
+    }
+    .featuredDiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

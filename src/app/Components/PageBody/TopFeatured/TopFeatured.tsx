@@ -3,22 +3,31 @@ import FeaturedBrand from "./FeaturedBrand"
 import "./TopFeatured.css"
 import { GiBarbedStar } from "react-icons/gi"
 import { PiMedalBold } from "react-icons/pi"
+import Heading from "../Heading"
 
 const TopFeatured = () => {
     return(
         <div className="FlashRowDiv TopFeaturedDiv">
             <div className="TopRatingMainDiv">
-                <div className="row TopFeaturedHead">
+            <Heading icon={<PiMedalBold className="butIcon flashIcon TopIcon"/>} name="Top Ratings" 
+            nameClass="flashHead" divClass="row TopFeaturedHead"
+            />
+
+                {/* <div className="row TopFeaturedHead">
                     <PiMedalBold className="butIcon flashIcon TopIcon"/>
                     <h1 className="flashHead">Top Ratings</h1>
-                </div>
+                </div> */}
                 <TopRating />
             </div>
             <div className="FeaturedBrandMainDiv">
-                <div className="row TopFeaturedHead">
+            <Heading icon={<GiBarbedStar className="butIcon flashIcon TopIcon"/>} name="Featured Brands"
+            nameClass="flashHead" divClass="row TopFeaturedHead"
+            />
+
+                {/* <div className="row TopFeaturedHead">
                     <GiBarbedStar className="butIcon flashIcon TopIcon"/>                    
                     <h1 className="flashHead">Featured Brands</h1>
-                </div>
+                </div> */}
                 <FeaturedBrand />
             </div>
         </div>

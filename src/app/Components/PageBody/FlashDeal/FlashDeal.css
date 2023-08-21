@@ -1,7 +1,8 @@
 .FlashDealDiv{
     display: flex;
     flex-direction: column;
-    padding: 55px 10px;
+    padding: 55px 8px;
+    
 }
 .FlashRowDiv{
     display: flex;
@@ -21,6 +22,10 @@
 .ThreeBoxDiv{
     padding-left: 4px;
     width: 80%;
+}
+.ThreeBoxHeadDiv{
+    display: flex;
+    justify-content: space-between;
 }
 .ThreeBoxHeading{
     padding: 8px;
@@ -107,8 +112,29 @@
     color: rgb(210, 63, 87);
 }
 .headingMainDiv{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 11px;
     margin-left: 13px;
+}
+.viewHead{
+    color: gray;
+    font-size: 13px;
+    margin-right: 4px;
+}
+.rightIcon{
+    color: gray;
+    fill: currentColor;
+    font-size: 13px;
+}
+.viewHeadDiv{
+    margin-right: 20px;
+}
+.viewHeadDiv2{
+    margin-right: 15px;
+}
+.viewHeadDiv3{
+    margin-right: 25px;
 }
 .fullWidth{
     display: flex;
@@ -126,6 +152,7 @@
 .div80{
     /* position: relative; */
     width: 100%;
+    max-width: 1280px;
     overflow: hidden;
     z-index: 9;
 }
@@ -172,14 +199,41 @@
     margin-right: 16px;
 }
 .redCol{
+    display: flex;
+    align-self: flex-end;
     color: rgb(210, 63, 87);
-    font-size: 20px;
+    font-size: 22px;
+    padding: 0 5.5px 0 6.5px;
+    line-height: 1.2;
+    border-radius: 3px;
     border: 1px solid rgba(210, 63, 87, 0.6);
+    font-weight: bold;
+    cursor: pointer;
+}
+.minusSign{
+    line-height: 1.2;
+    display: flex;
+    /* display: flex; */
+    /* padding-bottom: 25px; */
+    opacity: 1 !important;
+    /* padding-top: -10px; */
+}
+.blackNum{
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    /* align-items: center; */
+    opacity: 1 !important;
+}
+.hidden{
+    opacity: 0 !important;
+    cursor: context-menu;
+    /* display: none; */
 }
 .column{
     display: flex;
     flex-direction: column;
-    /* align-items: flex; */
+    justify-content: flex-end;
 }
 .boxDataChild{
     font-size: 14px;
@@ -205,4 +259,9 @@
     font-size: 14px;
     color: gray;
     text-decoration: line-through;
+}
+@media screen and (max-width: 1150px){
+.flashBox2{
+    width: calc(50% - 24px) !important;
+}
 }

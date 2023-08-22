@@ -35,8 +35,10 @@ const Navbar = () => {
     return(
     <div className="navbar">
         <Navbar1 />
+        <div className="navbarChildDiv">
         <Navbar2 check={check}/>
         <Navbar3 check={check}/>
+        </div>
     </div>
     )
 }

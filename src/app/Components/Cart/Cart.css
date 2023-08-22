@@ -1,24 +1,104 @@
 .CartMainDiv{
     width: 27%;
-    /* right: 0; */
-    /* top: 0; */
     height: 100%;
     background-color: white;
     z-index: 30;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 10px -5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.12) 0px 6px 30px 5px;
 }
 .cartFixed{
     position: fixed;
     top: 0;
+    right: 0;
     z-index: 30;
     height: 100%;
     width: 100%;
 }
+
+.emptCartFixed{
+    width: 14.8%;
+}
+
+
 .bgGrayBody{
     width: 73%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+.emptGrayBg{
+    width: 85.2%;
+}
 .rowFirstItemsDiv{
     display: flex;
+    align-items: center;
+}
+
+.rowItemsDiv{
+    padding: 24px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+.shoppingBagIcon{
+    font-size: 25px;
+    margin-right: 7px;
+    /* background-color: aqua; */
+    /* padding: 0 !important; */
+    /* margin: 0 !important; */
+}
+.cartItemQuant{
+    font-size: 14px;
+    margin-bottom: 7px;    
+}
+.closeIcon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    margin-right: 12px;
+}
+.cartItems{
+    padding: 17px 20px;
+}
+.redCircleCol{
+    border-radius: 50%;
+    padding: 0 8px;
+    font-size: 24px;
+    /* padding-bottom: 5px; */
+}
+.blackCircleCol{
+    border: 1px solid rgba(210, 210, 210, 0.6);
+    color: rgb(200, 200, 200);
+}
+.minusCircle{
+    padding-bottom: 2px;
+}
+.cartItemNum{
+    display: flex;
+    justify-content: center;
+    padding: 2.5px 0;
+}
+.cartItemImg{
+    width: 78px;
+    margin-left: 16px;
+}
+.cartItems{
+    border-bottom: 1px solid rgba(210, 210, 210, 0.3);
+}
+.emptCartBag{
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    margin: 132px 0;
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+.emptCartPara{
+    line-height: 1.8;
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.8);
+    padding-top: 15px;
+    text-align: center;
 }

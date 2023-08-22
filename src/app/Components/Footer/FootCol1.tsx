@@ -2,7 +2,7 @@ import { FaAppStoreIos } from "react-icons/fa"
 import { BiLogoPlayStore } from "react-icons/bi"
 const FootCol1 = () => {
     return(
-        <div className="FootCol1">
+        <div className="FootCol1 FooterChild">
                 <img className="footBazarImg" src="https://bazaar.ui-lib.com/assets/images/logo.svg"/>
                 <p className="FootCol1Para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in 
                     gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit 

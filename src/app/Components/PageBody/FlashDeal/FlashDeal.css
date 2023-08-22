@@ -1,8 +1,10 @@
 .FlashDealDiv{
     display: flex;
     flex-direction: column;
-    padding: 55px 8px;
-    
+    padding: 55px 4px;
+    /* background-color: aqua; */
+    max-width: 1280px;
+    margin: auto;
 }
 .FlashRowDiv{
     display: flex;
@@ -17,7 +19,10 @@
 }
 .ThreeBoxMainDiv{
     width: 100%;
-    padding: 52px 18px 2px;
+    max-width: 1280px;
+    margin: auto;
+    /* background-color: aqua; */
+    padding: 52px 12px 2px;
 }
 .ThreeBoxDiv{
     padding-left: 4px;
@@ -136,6 +141,9 @@
 .viewHeadDiv3{
     margin-right: 25px;
 }
+.viewHeadDiv4{
+    margin-right: 32px;
+}
 .fullWidth{
     display: flex;
     width: 100%;
@@ -148,6 +156,39 @@
 .carousalDiv2{
     width: 166.67%;
     transition: 0.3s ease;
+}
+.ThirdCarMainDiv{
+    width: 150%;
+}
+@media screen and (max-width: 949px){
+    .carousalDiv{
+        width: 266.65%;
+    }
+    .carousalDiv2{
+        width: 250%;
+    }
+    .ThirdCarMainDiv{
+        width: 225%;
+    }
+}
+@media screen and (max-width: 649px){
+.carousalDiv{
+    width: 400%;
+}
+.carousalDiv2{
+    width: 500%;
+}
+.ThirdCarMainDiv{
+    width: 450%;
+}
+}
+@media screen and (max-width: 499px){
+.carousalDiv{
+    width: 800%;
+}
+.ThirdCarMainDiv{
+    width: 900%;
+}
 }
 .div80{
     /* position: relative; */
@@ -246,8 +287,10 @@
     font-size: 18px;
     color: #faaf00;
     fill: currentColor;
+    /* gap: 10px !important; */
 }
 .starDiv2{
+    gap: 4px !important;
     margin-top: 3px;
 }
 .newPrice{
@@ -260,8 +303,22 @@
     color: gray;
     text-decoration: line-through;
 }
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1280px){
 .flashBox2{
     width: calc(50% - 24px) !important;
 }
+}
+@media screen and (max-width: 960px){
+    .MiniDiv{
+        display: none !important;
+    }
+    .ThreeBoxDiv{
+        width: 100%;
+    }
+    .wrap{
+        width: 100%;
+    }
+    .flashBox2{
+        /* width: 48% !important; */
+    }
 }

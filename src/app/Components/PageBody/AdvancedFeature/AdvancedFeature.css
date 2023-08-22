@@ -1,6 +1,8 @@
 .AdvancedFeatureMainDiv{
-    padding: 44px 16px 55px;
+    padding: 44px 12px 55px;
     display: flex;
+    max-width: 1280px;
+    margin: auto;
         /* flex-direction: column; */
     /* justify-content: center; */
 }
@@ -29,4 +31,9 @@
     font-size: 14px;
     /* margin-top: 2px; */
     line-height: 1.5;
+}
+@media screen and (max-width: 1280px){
+    .AdvancedFeatureDiv{
+        width: 48.08%;
+    }
 }

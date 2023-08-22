@@ -1,15 +1,16 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import SearchingDiv from "./SearchingDiv";
-import { BsPerson } from "react-icons/bs"
+import { BsChevronDown, BsPerson } from "react-icons/bs"
 import { MdOutlineShoppingBag } from "react-icons/md"
 import { CartInfo } from "../../data/CartData";
 import Car from "../PageBody/Car/Car";
+import { BiSolidCategory } from "react-icons/bi";
 const Navbar2 = ({check}: any) => {
     const [ checkOpen, setCheckOpen ] = useState(true)
     const OpenCart = () => {
         CartInfo.cartOpen = true;
-        alert('check')
+        // alert('check')
         // if(!checkOpen)
         // setCheckOpen(true);
         // alert("testing")
@@ -18,7 +19,12 @@ const Navbar2 = ({check}: any) => {
     // alert(CartInfo.cartOpen)
     return(
         <div className={check == "Complete" ? "posFixed" : (check == "true" ? "posFixed loading" : "whiteBgColor")}>
+            <div className="navbar2">
             <img height="44" src="https://bazaar.ui-lib.com/assets/images/logo2.svg" alt="logo" className="bazarPic "/>
+            <div className={ check ? "catIconDiv row" : "catIconDiv row hideIcon"}>
+            <BiSolidCategory className="catIcon butIcon row"/>
+            <BsChevronDown className="catDownBut downCatBut"/>
+            </div>
             <SearchingDiv />
             <div className="row twoIconDiv">
                 <div className="navMainIcon">
@@ -28,6 +34,7 @@ const Navbar2 = ({check}: any) => {
                     <MdOutlineShoppingBag />
                 </div>
             </div>
+        </div>
         </div>
     )
 }

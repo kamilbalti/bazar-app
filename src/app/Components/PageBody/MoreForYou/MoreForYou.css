@@ -1,5 +1,7 @@
 .MoreForYouMainDiv{
-    padding: 52px 18px 0;
+    padding: 52px 12px 0;
+    max-width: 1280px;
+    margin: auto;
 }
 .MoreForHead{
     font-size: 24px;
@@ -21,4 +23,9 @@
 .MoreForHeadDiv{
     display: flex;
     justify-content: space-between;
+}
+@media screen and (max-width: 1280px){
+    .flashBox3{
+        width: 31.4%;
+    }
 }

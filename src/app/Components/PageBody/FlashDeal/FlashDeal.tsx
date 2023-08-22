@@ -6,7 +6,7 @@ import Heading from "../Heading"
 const FlashDeal = () => {
     return(
         <div className="FlashDealDiv">
-            <Heading icon={<IoIosFlash className="flashIcon"/>} name="Flash Deal" nameClass="flashHead"
+            <Heading icon={<IoIosFlash className="flashIcon"/>} name="Flash Deals" nameClass="flashHead"
             divClass="row headingMainDiv" viewHead={'viewHeadDiv'}
             />
             <div>

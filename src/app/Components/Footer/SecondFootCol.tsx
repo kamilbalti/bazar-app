@@ -2,7 +2,7 @@ import { CgTwitter, CgFacebook } from "react-icons/cg"
 import { AiOutlineInstagram, AiOutlineGoogle, AiOutlineYoutube } from "react-icons/ai"
 const SecondFootCol = ({Obj, className}: any) => {
     return(
-        <div className={className}>
+        <div className={className + " FooterChild"}>
             <h2 className="SecondFootHead">{Obj?.head}</h2>
             {Obj?.arr?.map((item: any, index: number) => 
                 <p className="SecondFootPara">{item}</p>

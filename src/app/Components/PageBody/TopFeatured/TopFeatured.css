@@ -1,5 +1,7 @@
 .TopFeaturedDiv{
-    padding: 40px 30px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 40px 25px;
     gap: 32px;
 }
 .TopFeaturedHead{
@@ -19,7 +21,16 @@
 .TopBox{
     padding: 15px;
     text-align: center;
-    width: 100%;
+    width: 25%;
+}
+@media screen and (max-width: 959px){
+    .TopRatingDiv{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .TopBox{
+        /* width: 24%; */
+    }
 }
 .zeroQuantity{
     color: black;
@@ -32,6 +43,7 @@
 }
 .TopRatingStars{
     padding-top: 10px;
+    gap: 2px;
 }
 .TopItemName{
     font-size: 14px;
@@ -40,7 +52,7 @@
 .featuredDiv{
     background-color: white;
     padding: 16px;
-    gap: 25px;
+    gap: 24px;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(3, 0, 71, 0.09);
 }
@@ -78,11 +90,12 @@
     font-size: 14px;
     color: rgba(0, 0, 0, 0.8);
 }
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1280px){
     .TopFeaturedDiv{
         display: flex;
         flex-direction: column;      
-        padding: 40px 20px;
+        padding: 39px 24px;
+        gap: 25px;
     }
     .TopRatingMainDiv{
         width: 100%;
@@ -95,7 +108,10 @@
         justify-content: center;
     }
     .featuredChildDiv{
-        width: 48.5%;
+        width: 49%;
+    }
+    .resFeaturedChildDiv{
+        width: 23.5%;
     }
     .featuredDiv{
         display: flex;

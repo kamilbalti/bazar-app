@@ -1,5 +1,7 @@
 .newArrivalMainDiv{
-    padding: 10px 29px;
+    padding: 10px 24px;
+    max-width: 1280px;
+    margin: auto;
     /* font-size: 30px; */
 }
 .newIcon{
@@ -18,11 +20,7 @@
     padding: 0;
 }
 .BigDiscountDiv{
-    padding: 62px 5px 0 10px;
-}
-.ThirdCarDiv{
-    width: 16.667%;
-}
-.ThirdCarMainDiv{
-    width: 150%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 62px 4px 0 4px;
 }

@@ -14,7 +14,7 @@ const NewArrival = () => {
             </div> */}
             <div className="featuredDiv row">
             {NewArrivalData?.map((item: any, index: any) => 
-                <div className="featuredChildDiv">
+                <div className="featuredChildDiv resFeaturedChildDiv">
                     <img className="flashImg" src={item?.ImgSrc} />
                     <p className="featuredPara">{item?.name}</p>
                     <p className="featuredPara newPrice newArrPrice">{item?.price}</p>

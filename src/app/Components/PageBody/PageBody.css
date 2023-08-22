@@ -4,7 +4,9 @@
 }
 .TwoImgDiv{
     width: 100%;
-    padding: 55px 29px 10px 29px;
+    padding: 55px 24px 10px;
+    max-width: 1280px;
+    margin: auto;
     height: auto;
     display: flex;
 }

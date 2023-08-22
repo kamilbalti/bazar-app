@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 import { useState } from "react"
-import { AiFillStar } from "react-icons/ai"
+import AllStar from "./AllStar"
 const Box = ({item, check}: any) => {
     const [num, setNum] = useState(0)
     const addNum = () => {
@@ -21,13 +21,7 @@ const Box = ({item, check}: any) => {
         <div className="row spaceBetween">
             <div className="boxData">
             <p className="boxDataChild">{item?.name}</p>
-            <div className="boxDataChild starDiv starDiv2">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            </div>
+            <AllStar className={"boxDataChild starDiv starDiv2"}/>
             <p className="boxDataChild"><span className="newPrice">{item?.newVal}</span>
             <span className="oldPrice">{item?.delVal}</span></p>
             </div>

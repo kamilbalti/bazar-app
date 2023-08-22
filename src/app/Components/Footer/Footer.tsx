@@ -8,6 +8,7 @@ const Footer = () => {
     
     return(
         <div className="FooterDiv FlashRowDiv">
+        <div className="FooterChildDiv">
             {
                 <>
                     <FootCol1 />
@@ -16,6 +17,7 @@ const Footer = () => {
                     <SecondFootCol className={"SecondFootCol ForthFootCol"} Obj={ForthFootColData}/>
                 </>
             }
+        </div>
         </div>
     )
 }   

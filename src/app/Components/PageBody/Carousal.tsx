@@ -61,7 +61,7 @@ const Carousal = ({carNum, val, carousalData, temp}: any) => {
         :
         <div className="Header">
             <div className="div80">
-                <div style={{transform: `translateX(${num}%)`, transition: '0.5s ease'}} className="carousalDiv row">
+                <div style={{transform: `translateX(${num}%)`, transition: '0.5s ease'}} className="carousalDiv carousalDiv4 row">
                     <HeaderItem />
                     <HeaderItem />
                 </div>

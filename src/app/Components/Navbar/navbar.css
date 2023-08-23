@@ -17,13 +17,15 @@ body{
 }
 .blueBgColor{
     height: 40px;   
-    padding: 8px 24px;
     max-width: 1280px;
     margin: auto;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    overflow: hidden;
     justify-content: space-between;
     color:  white !important;
+    transition: 0.2s ease;
 }
 .navbar{
     border-bottom: 1px solid #F3F5F9;
@@ -33,9 +35,15 @@ body{
     margin: auto;
 }
 .firstNavParaDiv{
+    color: white;
     display: flex;
     flex-direction: row;
+    padding: 8px 24px;
     align-items: center;
+}
+.hideIcons{
+    display: none;
+    color: white;
 }
 .bgRedBut{
     font-family: sans-serif;
@@ -320,6 +328,68 @@ button{
     margin-left: 15px;
     height: 45px;
 }
+.secondNavHideItems{
+    display: none;
+}
+.BottomNavbarMainDiv{
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 30;
+    box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+.bottomIcon{
+    font-size: 20px !important;
+    padding: 0 !important;
+    /* width: 100px; */
+    /* background-color: aqua; */
+    /* font-size: 28px !important; */
+}
+.BottomNavbarChildDiv{
+    font-size: 13px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+@media screen and (max-width: 1149px){
+    .navMainIcon{
+        background-color: white;
+        margin: 0;
+        padding: 10px 7px;
+        border: none;
+    }
+    .secondNavMenu{
+        padding: 10px;
+        font-size: 40px;
+    }
+    .secondNavToHideItems{
+        display: none;
+    }
+    .secondNavHideItems{
+        display: flex;
+        border-radius: 0;
+        border: none;
+        opacity: 1;
+    }
+    .twoIconDiv{
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 599px){
+    .navbar2{
+        padding: 10px 16px;
+    }
+    .firstNavParaDiv{
+        padding: 8px 16px;
+    }
+}
 .linkPara{
     color: #2B3445;
     font-size: 14px;
@@ -346,4 +416,48 @@ button{
     /* flex-direction: column; */
     z-index: 40;
     box-shadow: 0 5px 3px rgba(3, 0, 71, 0.09);
+}
+@media screen and (max-width: 1149px){
+    .nav3{
+        display: none;
+    }
+    .navbar{
+        border: none;
+    }
+    .catIconDiv{
+        opacity: 0;
+        /* display: none; */
+    }
+}
+@media screen and (max-width: 599px){
+    .firstNavIconDiv{
+        display: none;
+    }
+    .hideIcons{
+        font-size: 20px;
+        position: absolute;
+        top: 8px;
+        right: 18px;
+        display: flex;
+    }
+    .hideIconTrue{
+        display: none;
+        position: absolute;
+        top: 8px;
+        right: 18px;
+    }
+    .blueBgColumn{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 80px;
+        transition: 0.2s ease;
+    }
+    .hideFalse{
+        display: flex;
+    }
+    .showFirstNavIconDiv{
+        display: flex;
+        padding: 0 7px;
+    }
 }

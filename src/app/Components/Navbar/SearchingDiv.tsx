@@ -3,7 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai"
 
 const SearchingDiv = () => {
     return(
-        <div className="inputDiv">
+        <div className="inputDiv secondNavToHideItems">
             <div className="searchIcon">
                 <AiOutlineSearch />
             </div>

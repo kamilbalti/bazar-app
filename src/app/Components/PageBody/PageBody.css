@@ -18,3 +18,19 @@
     width: 67%;
     padding-left: 12px;
 }
+@media screen and (max-width: 959px){
+    .TwoImgDiv{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 55px 16px 10px;
+    }
+    .firstImg{
+        width: 100%;
+        padding: 0;
+    }
+    .secondImg{
+        width: 100%;
+        padding: 0;
+        padding-top: 29px;
+    }
+}

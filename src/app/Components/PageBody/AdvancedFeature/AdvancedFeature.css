@@ -37,3 +37,11 @@
         width: 48.08%;
     }
 }
+@media screen and (max-width: 599px){
+    .AdvancedFeatureMainDiv{
+        padding: 44px 0 55px;
+    }
+    .AdvancedFeatureDiv{
+        width: 100%;
+    }
+}

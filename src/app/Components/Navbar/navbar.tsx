@@ -3,10 +3,12 @@ import React, { useEffect, useState } from "react";
 import Navbar1 from "./navbar1"
 import Navbar2 from "./navbar2"
 import Navbar3 from "./navbar3"
+import BottomNavbar from "./bottomNavbar";
 
 const Navbar = () => {
     const [ check, setCheck ]: any = useState(false)
     window.onscroll = () => {
+        if(typeof window !== undefined){
         if(window.scrollY >= 360 && check != 'Complete')
         {
             setCheck("true")
@@ -19,9 +21,10 @@ const Navbar = () => {
         setCheck("Complete")
         else if(window.scrollY < 360 || window.scrollY == 0){
         setCheck(false)
-    }
+    }}
     }
     useEffect(() => {
+        if(typeof window !== undefined){
         if(window.scrollY >= 360)
         {
             setCheck("true")
@@ -31,14 +34,15 @@ const Navbar = () => {
         }
         else if(window.scrollY < 360)
             setCheck(false)
-        },[])
+        }},[])
     return(
-    <div className="navbar">
+    <div className={check ? "navbar navPadding" : "navbar"}>
         <Navbar1 />
         <div className="navbarChildDiv">
         <Navbar2 check={check}/>
-        <Navbar3 check={check}/>
+        <Navbar3 />
         </div>
+        <BottomNavbar />
     </div>
     )
 }

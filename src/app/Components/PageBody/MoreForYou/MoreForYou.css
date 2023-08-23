@@ -27,5 +27,18 @@
 @media screen and (max-width: 1280px){
     .flashBox3{
         width: 31.4%;
+        margin: 12px 0.95%;
+    }
+}
+@media screen and (max-width: 599px){
+    .MoreForYouMainDiv{
+        padding: 52px 0 0;
+    }
+    .flashBox3{
+        width: 100%;
+        margin: 16px;
+    }
+    .MoreForHead{
+        margin-left: 15px;
     }
 }

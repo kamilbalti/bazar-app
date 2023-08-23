@@ -24,3 +24,8 @@
     margin: auto;
     padding: 62px 4px 0 4px;
 }
+@media screen and (max-width: 599px){
+    .newArrivalMainDiv{
+        padding: 10px 16px;
+    }
+}

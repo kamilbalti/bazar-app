@@ -106,3 +106,13 @@
         width: 50%;
     }
 }
+@media screen and (max-width: 599px){
+    .FooterChild{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .FooterDiv{
+        padding: 88px 16px;
+        padding-bottom: 80px;
+    }
+}

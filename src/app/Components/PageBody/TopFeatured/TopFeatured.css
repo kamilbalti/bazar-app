@@ -12,6 +12,7 @@
 .TopIcon{
     color: orange !important;
     fill: currentColor;
+    margin-left: 0;
 }
 .TopRatingDiv{
     background-color: white;
@@ -51,12 +52,13 @@
 }
 .featuredDiv{
     background-color: white;
-    padding: 16px;
-    gap: 24px;
+    padding: 4px;
+    /* gap: 24px; */
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(3, 0, 71, 0.09);
 }
 .featuredChildDiv{
+    padding: 12px;
     font-size: 14px;
     border-radius: 10px;
 }
@@ -108,13 +110,31 @@
         justify-content: center;
     }
     .featuredChildDiv{
-        width: 49%;
+        width: 50%;
     }
     .resFeaturedChildDiv{
-        width: 23.5%;
+        width: 25%;
     }
     .featuredDiv{
         display: flex;
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 599px){
+    .TopFeaturedDiv{
+        padding: 39px 16px;
+    }
+    .TopRatingDiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .TopBox{
+        width: 50%;
+    }
+    .featuredChildDiv{
+        width: 100%;
+    }
+    .resFeaturedChildDiv{
+        width: 50%;
     }
 }

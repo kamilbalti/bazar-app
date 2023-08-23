@@ -322,3 +322,25 @@
         /* width: 48% !important; */
     }
 }
+@media screen and (max-width: 599px){
+    .fullWidth{
+        padding: 0;
+    }
+    .headingMainDiv{
+        margin-left: 4px;
+    }
+    .ThreeBoxDiv{
+        padding: 0;
+    }
+    .ThreeBoxMainDiv{
+        padding: 52px 4px 2px;
+    }
+    .flashBox2{
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 0){
+    .carousalDiv4{
+        width: 200%;
+    }
+}

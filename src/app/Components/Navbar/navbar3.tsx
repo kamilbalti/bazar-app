@@ -42,7 +42,7 @@ const Navbar3 = ({check}: any) => {
     //     item.onMouseOver
     // })
     return(
-        <div className={ check ? "nav3 whiteBgColor navPadding" :"nav3 whiteBgColor"}>
+        <div className={"nav3 whiteBgColor"}>
             <div className="">
             <button className="categories" onClick={showDetail}>
             <BiSolidCategory className="butIcon row"/>

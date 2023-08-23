@@ -7,6 +7,7 @@
 .radioBut{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .radio{
     fill: inherit;
@@ -25,20 +26,28 @@
     font-family: 'Open Sans', sans-serif;
     max-width: 1280px;
     margin: auto;
+    padding-bottom: 60px;
 }
 .HeaderRow{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: center;
+    /* flex-wrap: wrap; */
     overflow: hidden;
-    width: 100%;
+    width: 50%;
+    max-width: 1280px;
+    min-height: 424px;
 }
 .HeaderItem{
     /* width: 100%; */
 }
 .HeaderIntroDiv{
-    width: 40%;
-    height: 470px;
+    width: 50%;
+    margin-top: 26px;
+    /* padding-top: 44px; */
+    /* padding: 30px 0; */
+    /* width: 40%; */
+    /* height: 470px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +55,7 @@
 .HeaderIntroHead{
     font-family: sans-serif;
     font-size: 50px;
+    letter-spacing: 1px;
     font-weight: 600;
     margin: 10px 0;
     margin-top: 0;
@@ -68,25 +78,63 @@
     font-weight: bold;
 }
 .HeaderImgDiv{
-    width: 63%;
+    max-height: 400px;
+    /* width: 63%; */
     padding: 0;
     display: flex;
     flex-direction: row;
-    padding: 30px 0;
+    padding: 30px 24px;
+    padding-right: 0;
     /* align-items: center; */
     justify-content: center;
+    /* padding: 24px; */
+    width: 50%;
+}
+@media screen and (max-width: 1280px){
+    .HeaderImgDiv{
+        margin: 30px 0;
+        /* margin: auto; */
+        padding: 0 24px;
+    }
+    .Header{
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 959px){
+    .HeaderImgDiv{
+        width: 51.5%;
+        margin-top: 10px;
+    }
+    .HeaderIntroDiv{
+        width: 48.5%;
+    }
 }
 .HeaderImg{
-    width: 430px;
-    height: 400px;
-    margin-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 400px;
+    /* margin-left: 60px; */
+}
+@media screen and (min-width: 959px){
+    .HeaderImgDiv{
+        width: 58.33%;
+    }
+    .HeaderIntroDiv{
+        width: 41.77%;
+    }
 }
 @media screen and (max-width: 599px){
     .Header{
         height: fit-content;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    .HeaderIntroHead{
+        font-size: 31px !important;
     }
     .HeaderRow{
-        width: 26%;
+        /* width: 26%; */
         display: flex;
         flex-wrap: wrap;
     }
@@ -94,10 +142,14 @@
         font-size: 34px;
     }
     .HeaderIntroDiv{
-        width: 100%;
+        width: 100% !important;
         height: inherit;
+        padding: 0 14px;
+        padding-top: 10px;
     }
     .HeaderImgDiv{
-        width: 100%;
+        width: 100% !important;
+        padding: 0;
+        margin: 20px 0 16px;
     }
 }

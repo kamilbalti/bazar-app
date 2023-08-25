@@ -1,20 +1,29 @@
-'use client'
+// 'use client'
 import React, { useEffect, useState } from "react";
 import SearchingDiv from "./SearchingDiv";
 import { BsChevronDown, BsPerson } from "react-icons/bs"
 import { MdOutlineShoppingBag } from "react-icons/md"
-import { CartInfo } from "../../data/CartData";
+import { CartInfo } from "../../data/MainData/MainData";
 import Car from "../PageBody/Car/Car";
 import { BiSolidCategory } from "react-icons/bi";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
+import { setCartOpen } from "../../../Redux-Toolkit/BazarSlice";
+// import { useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../../../Redux-Toolkit/Hook";
 const Navbar2 = ({check}: any) => {
     const [ checkOpen, setCheckOpen ] = useState(true)
     const [ width, setWidth ] = useState(0)
+    const dispatch = useAppDispatch()
+    const cartOpen: any = useAppSelector((e) => e.cartOpen)
     useEffect(() => {
         setWidth(window.innerWidth)
     },[window.innerWidth])
+    // const ItemsQuantity: any = useAppSelector((e) => e.ItemsQuantity)
     const OpenCart = () => {
-        CartInfo.cartOpen = true;
+        // console.log(ItemsQuantity, " cartOpen ")
+        // alert(cartOpen)
+        dispatch(setCartOpen(true))
+        // alert(cartOpen)
         // alert('check')
         // if(!checkOpen)
         // setCheckOpen(true);

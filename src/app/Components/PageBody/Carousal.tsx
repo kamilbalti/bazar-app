@@ -43,7 +43,7 @@ const Carousal = ({carNum, val, carousalData, temp}: any) => {
                 {
                     carousalData?.map((item: any, index: number) => (
                     carNum == 1 ?
-                        <Box item={item}/>:
+                        <Box item={item} index1={0} index2={index}/>:
                     carNum == 2 ?
                     <SecondCarousalBox item={item}/>
                     : 

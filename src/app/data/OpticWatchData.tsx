@@ -5,7 +5,8 @@ export const OpticWatchData: any = [
         delVal: "$167.00",
         newVal: "$150.30",
         off: "10% off",
-        num: 0
+        index1: 3,
+        index2: 0
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F8.RayBanMattBlack.png&w=1920&q=75`,
@@ -13,7 +14,8 @@ export const OpticWatchData: any = [
         delVal: "$129.00",
         newVal: "$117.39",
         off: "9% off",
-        num: 0
+        index1: 3,
+        index2: 1
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F9.RayBanBlack.png&w=1920&q=75`,
@@ -21,7 +23,8 @@ export const OpticWatchData: any = [
         delVal: "$168.00",
         newVal: "$156.24",
         off: "7% off",
-        num: 0
+        index1: 3,
+        index2: 2
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F10.RayBanOcean.png&w=1920&q=75`,
@@ -29,7 +32,8 @@ export const OpticWatchData: any = [
         delVal: "$211.00",
         newVal: "$194.12",
         off: "8% off",
-        num: 0
+        index1: 3,
+        index2: 3
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F11.SunglassesCollection.png&w=1920&q=75`,
@@ -37,7 +41,8 @@ export const OpticWatchData: any = [
         delVal: "$147.00",
         newVal: "$136.71",
         off: "7% off",
-        num: 0
+        index1: 3,
+        index2: 4
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F12.Xiaomimiband2.png&w=1920&q=75`,
@@ -45,7 +50,8 @@ export const OpticWatchData: any = [
         delVal: "$239.00",
         newVal: "$222.27",
         off: "7% off",
-        num: 0
+        index1: 3,
+        index2: 5
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F13.FossilWatchBrown.png&w=1920&q=75`,
@@ -53,7 +59,8 @@ export const OpticWatchData: any = [
         delVal: "$266.00",
         newVal: "$244.72",
         off: "8% off",
-        num: 0
+        index1: 3,
+        index2: 6
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F14.MVMTMWatchBlack.png&w=1920&q=75`,
@@ -61,7 +68,8 @@ export const OpticWatchData: any = [
         delVal: "$212.00",
         newVal: "$199.28",
         off: "6% off",
-        num: 0
+        index1: 3,
+        index2: 7
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F15.BarihoWatchBlack.png&w=1920&q=75`,
@@ -69,6 +77,7 @@ export const OpticWatchData: any = [
         delVal: "$226.00",
         newVal: "$214.70",
         off: "5% off",
-        num: 0
+        index1: 3,
+        index2: 8
       }
 ]

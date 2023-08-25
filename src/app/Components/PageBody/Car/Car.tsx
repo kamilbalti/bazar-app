@@ -7,8 +7,8 @@ import ThreeBox from "../ThreeBoxDiv"
 const Car = () => {
     return(
         <>
-            <ThreeBox data={CarsData} miniData={MiniCarsData} head={"Cars"}/>
+            <ThreeBox data={CarsData} miniData={MiniCarsData} head={"Cars"} index={1}/>
         </>
     )
 }
-export default Car
+export default Car;

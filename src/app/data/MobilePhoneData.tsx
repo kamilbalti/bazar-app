@@ -5,7 +5,8 @@ export const MobilePhoneData: any = [
         delVal: "$199.00",
         newVal: "$187.06",
         off: "6% off",
-        num: 0,
+        index1: 2,
+        index2: 0
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FElectronics%2F30.Nokiaandroidone.png&w=1920&q=75`,
@@ -13,7 +14,8 @@ export const MobilePhoneData: any = [
         delVal: "$122.00",
         newVal: "$111.02",
         off: "9% off",
-        num: 0,
+        index1: 2,
+        index2: 1
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FElectronics%2F31.Symphonlights.png&w=1920&q=75`,
@@ -21,7 +23,8 @@ export const MobilePhoneData: any = [
         delVal: "$255.00",
         newVal: "$229.50",
         off: "10% off",
-        num: 0,
+        index1: 2,
+        index2: 2
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FElectronics%2F32.iphone7.png&w=1920&q=75`,
@@ -29,7 +32,8 @@ export const MobilePhoneData: any = [
         delVal: "$109.00",
         newVal: "$103.55",
         off: "5% off",
-        num: 0,
+        index1: 2,
+        index2: 3
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FElectronics%2F33.beatswirelessearphones.png&w=1920&q=75`,
@@ -37,7 +41,8 @@ export const MobilePhoneData: any = [
         delVal: "$181.00",
         newVal: "$171.95",
         off: "5% off",
-        num: 0,
+        index1: 2,
+        index2: 4
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FElectronics%2F34.HTC2018.png&w=1920&q=75`,
@@ -45,7 +50,8 @@ export const MobilePhoneData: any = [
         delVal: "$154.00",
         newVal: "$140.14",
         off: "9% off",
-        num: 0,
+        index1: 2,
+        index2: 5
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FElectronics%2F35.beatsbluetoothearpohones.png&w=1920&q=75`,
@@ -53,7 +59,8 @@ export const MobilePhoneData: any = [
         delVal: "$148.00",
         newVal: "$134.68",
         off: "9% off",
-        num: 0,
+        index1: 2,
+        index2: 6
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FElectronics%2F36.sbsWirelessEarphones.png&w=1920&q=75`,
@@ -61,7 +68,8 @@ export const MobilePhoneData: any = [
         delVal: "$160.00",
         newVal: "$145.60",
         off: "9% off",
-        num: 0,
+        index1: 2,
+        index2: 7
       },
       {
         ImgSrc: `https://bazar-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FAccessories%2F1.SilverCap.png&w=1920&q=75`,
@@ -69,6 +77,7 @@ export const MobilePhoneData: any = [
         delVal: "$237.00",
         newVal: "$225.15",
         off: "5% off",
-        num: 0,
+        index1: 2,
+        index2: 8
       },
 ]

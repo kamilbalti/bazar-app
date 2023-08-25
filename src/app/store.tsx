@@ -1,11 +1,9 @@
 // store.js
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './app';
+import bazarReducer from "../Redux-Toolkit/BazarSlice"
 
 const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer: bazarReducer,
 });
 
 export default store;

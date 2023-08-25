@@ -26,8 +26,9 @@ const Navbar3 = ({check}: any) => {
         // alert(showMoreDetail)
     }
     const mouseOver2 = (index2: any, index: any) => {
-        setShowMoreDetail2(index2)
-        setShowMoreDetail3(index)
+        setShowMoreDetail2(index)
+        setShowMoreDetail3(index2)
+        // alert(index2 + " " + index)
         // alert(showMoreDetail)
     }
     // const showMoreDetail = () => {
@@ -83,19 +84,28 @@ const Navbar3 = ({check}: any) => {
                 {NavCategoriesData[showMoreDetail]?.img ? 
                 <img src={NavCategoriesData[showMoreDetail]?.img} width={'150px'}/>: false}
                 </div> : false}
-                {<div className={NavCategoriesData[showMoreDetail]?.arr[showMoreDetail3]?.arr[showMoreDetail2]? "thirdDropDown":"row"}>
+                
+                {
+                    showMoreDetail3 == 0 && showMoreDetail != 4 && NavCategoriesData[showMoreDetail]?.arr?
+                    <div className={ NavCategoriesData[showMoreDetail]?.arr[showMoreDetail3]?.arr[showMoreDetail2]? "thirdDropDown" : ""}>
                 {
                 NavCategoriesData[showMoreDetail]?.arr? NavCategoriesData[showMoreDetail]?.arr[showMoreDetail3]?.arr[showMoreDetail2]?.arr ? 
                 NavCategoriesData[showMoreDetail]?.arr[showMoreDetail3]?.arr[showMoreDetail2]?.arr?.map((item: any, index: any) => 
                 <div className="navCatOptionPara2 column">
                     <h4 className="navCatOptionHeading">{item?.head}</h4>
                     <div className="dropDownPara">{item?.arr?.map((item2: any, index2: number) => 
-                        <p>{item2}</p>
+                        <p className='navCatChild'>{item2}</p>
                     )}</div>
                     </div>    
                 ): false : false
-            }
+            }   
+                    <div className="row">
+                    <h4>{NavCategoriesData[showMoreDetail]?.arr[showMoreDetail3]?.arr[showMoreDetail2]?.Heading}</h4>
+                    <p>{NavCategoriesData[showMoreDetail]?.arr[showMoreDetail3]?.arr[showMoreDetail2]?.Para}</p>
+                    <img src={NavCategoriesData[showMoreDetail]?.arr[showMoreDetail3]?.arr[showMoreDetail2]?.img2} />
+                    </div>
                 </div>
+                : false
             }
             </div>
             </div>

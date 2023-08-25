@@ -6,17 +6,19 @@ import Header from './Components/Header/header'
 import PageBody from './Components/PageBody/PageBody'
 import Footer from './Components/Footer/Footer'
 import '../AllPic/flash shoe.webp'
-import { CartInfo } from './data/CartData'
+// import { CartInfo } from './data/MainData/MainData'
 import Cart from './Components/Cart/Cart'
+import { useAppSelector } from '@/Redux-Toolkit/Hook'
 // import { CartInfo } from "../../data/CartData"
 
 function App() {
+  const cartOpen: any = useAppSelector((e) => e.cartOpen)
   // alert(CartInfo.cartOpen)
   return (
     <div>
       <Navbar />
       {/* <Cart /> */}
-      {CartInfo.cartOpen ? <Cart cartInfo={CartInfo}/> : false  }
+      {cartOpen ? <Cart /> : false  }
       {/* <img src={`../../../`}/> */}
       <Header />
       <PageBody />

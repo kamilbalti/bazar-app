@@ -11,6 +11,7 @@ import App from './app'
 // import {configureStore} from "@reduxjs/toolkit"
 // import Reducer  from './redux'
 import { BrowserRouter } from "react-router-dom";
+import { store } from '../Redux-Toolkit/Store.js'
 
 export default function Home() {
 
@@ -19,11 +20,10 @@ export default function Home() {
   return (
     <>
     {/* <h1>Hello</h1> */}
-    {/* <Provider store={store}> */}
       {/* <BrowserRouter> */}
         <App />
       {/* </BrowserRouter> */}
-    {/* </Provider> */}
+      {/* </Provider> */}
     </>
   )
 }

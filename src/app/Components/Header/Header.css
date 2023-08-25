@@ -95,6 +95,7 @@
         margin: 30px 0;
         /* margin: auto; */
         padding: 0 24px;
+        padding-right: 0;
     }
     .Header{
         padding-bottom: 30px;

@@ -5,7 +5,7 @@ import { MiniMobilePhoneData } from "@/app/data/MiniMobilePhoneData"
 const MobilePhones = () => {
     return(
         <>
-        <ThreeBox data={MobilePhoneData} miniData={MiniMobilePhoneData} head={"Mobile Phones"} ind={6}/>
+        <ThreeBox data={MobilePhoneData} miniData={MiniMobilePhoneData} head={"Mobile Phones"} ind={6} index={2}/>
         </>
     )
 }

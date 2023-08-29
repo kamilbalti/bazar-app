@@ -67,6 +67,11 @@ body{
     /* font-family: '__Open_Sans_c8a2b8', sans-serif; */
     /* font-family: '__Open_Sans_c8a2b8 , __Open_Sans_Fallback_c8a2b8'; */
 }
+.langDivCol{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 .langDiv{
     background-color: #2B3445;
     border: none;
@@ -74,7 +79,8 @@ body{
     flex-direction: row;
     color: white;
     font-size: 12px;
-    margin-right: 11px !important;
+    padding: 0 11px;
+    /* margin-right: 11px !important; */
 }
 .multiIcon{
     color: white !important;
@@ -94,7 +100,7 @@ body{
     transition: 0.3s ease;
     position: fixed;
     width: 100%;
-    z-index: 20;
+    z-index: 80;
     background-color: white;
     top: 0;
     right: 0;
@@ -162,14 +168,44 @@ button{
 }
 .AllOptionDiv{
     position: absolute;
-    top: 28%;
+    top: 180px;
     display: flex;
     /* width: 100%; */
     display: flex;
     flex-direction: row;
 }
+.AllLangDiv{
+    color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    align-self: center;
+    /* align-items: center; */
+    background-color: white;
+    z-index: 30;
+    overflow: hidden;
+    margin: 2px 0;
+    color: rgba(128, 128, 128, 0.5) !important;
+    width: 50px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+    /* right: 0; */
+}
+.AllCatDiv{
+    position: absolute;
+    top: 102px;
+    display: flex;
+    flex-direction: column;
+    background-color: white !important;
+    align-items: flex-start;
+    /* z-index: 100; */
+    opacity: 1 !important;
+    width: 121px;
+
+}
 .hideOption{
     display: none;
+    opacity: 0;
 }
 .navCatOptionPara{
     width: 262px;
@@ -197,11 +233,42 @@ button{
 .navCatOptionHeading{
     font-size: 14px;
 }
+.navCatOptionhalfDiv{
+    width: 25%;
+    padding: 25px;
+}
+.langDropDown{
+    /* color: black; */
+    cursor: pointer;
+    text-align: center;
+    margin: 6px 0;
+    width: 100%;
+}
+.noCenter{
+    text-align: start;
+
+}
+.langOptionPara{
+    padding: 10px 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+}
+.allCatOptionPara{
+    background-color: white;
+    font-size: 14px;
+    padding: 9px 15px;
+    /* color: black; */
+}
+.langOptionPara:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+}
 .firstDropDown{
     margin-right: 8px;
     background-color: white;
     flex-direction: column;
-    z-index: 40;
+    z-index: 60;
     box-shadow: 0 5px 3px rgba(3, 0, 71, 0.09);
 }
 .secondDropDown{
@@ -212,7 +279,7 @@ button{
     align-items: flex-start !important;
     background-color: white;
     flex-direction: column;
-    z-index: 40;
+    z-index: 60;
     box-shadow: 0 5px 3px rgba(3, 0, 71, 0.09);
 }
 .secondDropDown2{
@@ -227,10 +294,14 @@ button{
     background-color: white;
     justify-content: space-between;
     flex-direction: column;
-    z-index: 40;
+    z-index: 60;
     box-shadow: 0 5px 3px rgba(3, 0, 71, 0.09);
 }
+.secondDropDownLeft{
+    width: 200px;
+}
 .secondDropDownDiv{
+    background-color: white;
     display: flex;
     align-items: flex-start !important;
     flex-wrap: wrap;
@@ -240,6 +311,10 @@ button{
     /* background-color: yellow; */
     width: 100%;
 }
+.megaMenuDiv{
+    width: 100%;
+   /* background-color: aqua;  */
+}
 .dropDownPara{
     padding: 10px 0;
     font-size: 14px;
@@ -248,11 +323,25 @@ button{
     display: flex;
     justify-content: space-between !important;
 }
+.dropDownLargePara{
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    /* background-color: aqua; */
+}
+.navCatOptionhalfDiv2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+}
 .column{
     display: flex;
     flex-direction: column;
 }
 .firstDropDown{
+    cursor: pointer;
     padding: 7px;
 }
 .catPara{
@@ -262,7 +351,7 @@ button{
     border: none;
     outline: none;
     font-size: 15px;
-    width: 474px;
+    width: 100%;
     color: #2B3445;
 }
 
@@ -276,7 +365,8 @@ button{
     overflow: hidden;
     margin: 0 auto;
     color: #2B3445;
-    opacity: 0.8;
+    width: 54.5%;
+    /* opacity: 0.8; */
 }   
 .row{
     display: flex;
@@ -284,10 +374,16 @@ button{
     align-items: center;    
 }
 .catHead{
-    height: 100%;
-    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    height: 43px;
+    box-sizing: border-box;
+    white-space: pre;
+    /* width: fit-content; */
     font-size: 14px;
     /* min-width: 180px; */
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 25px;
     padding-right: 30px;
     display: flex;
@@ -331,6 +427,22 @@ button{
     border-radius: 100%;
     margin-left: 15px;
     height: 45px;
+}
+.cartImgDiv{
+    position: relative;
+}
+.cartItemTopNum{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(210, 63, 87);
+    border-radius: 100%;
+    padding: 2px 7px;
+    margin-bottom: auto;
+    font-size: 12px !important;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -10px;
 }
 .secondNavHideItems{
     display: none;
@@ -385,6 +497,7 @@ button{
         margin-left: 25px;
     }
 }
+
 @media screen and (max-width: 599px){
     .navbar2{
         padding: 10px 16px;
@@ -392,18 +505,140 @@ button{
     .firstNavParaDiv{
         padding: 8px 16px;
     }
+    .twoIconDiv{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .catIconDiv{
+        display: none;
+    }
+}
+.AllDropDownDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .linkPara{
     color: #2B3445;
     font-size: 14px;
     display: flex;
     flex-direction: row;
+    padding: 7px 0 7px;
+    cursor: pointer;
     padding-left: 33px;
 }
 .allNavDownIcon{
     color: rgb(180, 180, 180);
     padding-top: 6px;
     padding-left: 4px;
+}
+.dropAbsDiv{
+    position: absolute;
+    top: 180px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: white; */
+    z-index: 50;
+}
+.Pages{
+    display: flex;
+    flex-direction: row-reverse;
+    right: 19.8%;
+    gap: 10px;
+}
+
+.Home{
+    position: absolute;
+    left: 36%;
+}
+.User{
+    right: 11.35%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.Vendor{
+    right: 0.4%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.Mega{
+    top: 180px;
+    left: 12%;
+    z-index: 50;
+    height: 410px;
+    width: 965px;
+    /* background-color: aqua; */
+    background-color: white;
+    display: flex;
+    box-shadow: 0 5px 45px rgba(3, 0, 71, 0.09);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.MegaChild{
+    width: 25%;
+    padding: 25px 30px;
+    color: rgba(0, 0, 0, 0.7);
+    height: 410px;
+    overflow: hidden;
+}
+.BlackMega{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.Screen{
+    left: 0;
+    width: 100%;
+    height: 492px;
+    background-color: white;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+.FullScreenChild{
+    height: 492px;
+    width: 246px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+.hideDropExtra{
+    display: none;
+}
+.NavHomeDiv{
+    z-index: 30;
+    box-shadow: 0 5px 45px rgba(3, 0, 71, 0.09);
+    padding: 6px 0;
+    height: fit-content;
+    background-color: white;
+    /* z-index: 1000; */
+    opacity: 1;
+}
+.NavHomeChildDiv{
+    /* margin: 10px; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: sppa; */
+    padding: 9px 12px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    width: 200px;
+}
+.FullScreenChildDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    /* background-color: black; */
+    justify-content: space-between;
+    padding: 16px 25px;
+    /* background-color: aqua; */
+}
+.FullScreenChildDiv2{
+    margin: 50px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    box-shadow: none;
+    border: 0;
+    /* display: flex; */
 }
 .thirdDropDown{
     display: flex;
@@ -418,7 +653,7 @@ button{
     align-items: flex-start !important;
     background-color: white;
     /* flex-direction: column; */
-    z-index: 40;
+    z-index: 60;
     box-shadow: 0 5px 3px rgba(3, 0, 71, 0.09);
 }
 .navCatChild{
@@ -436,7 +671,7 @@ button{
         /* display: none; */
     }
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 899px){
     .BottomNavbarMainDiv{
         display: flex;
     }
@@ -471,5 +706,20 @@ button{
     .showFirstNavIconDiv{
         display: flex;
         padding: 0 7px;
+    }
+}
+@media screen and (max-width: 350px){
+    .secondNavMenu{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 320px){
+    .inputDiv{
+        width: inherit;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .secondNavMenu{
+        padding: 2px;
     }
 }

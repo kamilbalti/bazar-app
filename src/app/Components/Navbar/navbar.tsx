@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Navbar1 from "./navbar1"
 import Navbar2 from "./navbar2"
 import Navbar3 from "./navbar3"
-import BottomNavbar from "./bottomNavbar";
+import BottomNavbar from "./BottomNavbar";
 
 const Navbar = () => {
     const [ check, setCheck ]: any = useState(false)
@@ -23,6 +23,7 @@ const Navbar = () => {
         setCheck(false)
     }}
     }
+    
     useEffect(() => {
         if(typeof window !== undefined){
         if(window.scrollY >= 360)

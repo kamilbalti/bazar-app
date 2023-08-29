@@ -303,12 +303,12 @@
     color: gray;
     text-decoration: line-through;
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1279px){
 .flashBox2{
     width: calc(50% - 24px) !important;
 }
 }
-@media screen and (max-width: 960px){
+@media screen and (max-width: 959px){
     .MiniDiv{
         display: none !important;
     }

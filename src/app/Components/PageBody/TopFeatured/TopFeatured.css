@@ -92,7 +92,7 @@
     font-size: 14px;
     color: rgba(0, 0, 0, 0.8);
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1279px){
     .TopFeaturedDiv{
         display: flex;
         flex-direction: column;      

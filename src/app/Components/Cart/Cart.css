@@ -1,32 +1,33 @@
 .CartMainDiv{
-    width: 27%;
+    width: 380px;
     height: 100%;
     background-color: white;
-    z-index: 30;
-    overflow-y: scroll;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 10px -5px, rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.12) 0px 6px 30px 5px;
 }
 .cartFixed{
     position: fixed;
+    z-index: 80;
     top: 0;
-    right: 0;
-    z-index: 30;
+    /* right: -20px; */
+    /* left: 20px !important; */
+    /* z-index: 30; */
     height: 100%;
     width: 100%;
 }
 
 .emptCartFixed{
-    width: 14.8%;
+    width: 210px;
 }
 
 
 .bgGrayBody{
+    /* width: calc(100%-380px); */
     width: 73%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 .emptGrayBg{
-    width: 85.2%;
+    width: 86%;
 }
 .rowFirstItemsDiv{
     display: flex;
@@ -40,14 +41,20 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    position: relative;
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+.cartScrollDiv{
+    height: 79.7%;
+    width: 100%;
+    overflow-y: scroll !important;
+}
+.noScrollDiv{
+    height: 79.7%;
 }
 .shoppingBagIcon{
     font-size: 25px;
     margin-right: 7px;
-    /* background-color: aqua; */
-    /* padding: 0 !important; */
-    /* margin: 0 !important; */
 }
 .cartItemQuant{
     font-size: 14px;
@@ -58,9 +65,47 @@
     align-items: center;
     margin-bottom: 4px;
     margin-right: 12px;
+    cursor: pointer;
+}
+.closeChildIcon{
+    font-size: 14px;
+    margin-bottom: 0;
+    color: rgba(128, 128, 128, 0.3) !important;
+    fill: currentColor !important;
+}
+.downButton{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 12px;
+}
+.cartDownButton{
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 10.5px;
+    width: 100%;
+    border-radius: 4px;
+}
+button{
+    cursor: pointer;
+}
+.checkOutBut{
+    background-color: rgb(210, 63, 87);
+    color: white;
+    padding: 11.5px;
+}   
+.viewCartBut{
+    background-color: white;
+    color: rgb(210, 63, 87);
+    border: 1px solid rgb(210, 63, 87);
 }
 .cartItems{
     padding: 17px 20px;
+    padding-right: 16px;
+    border-bottom: 1px solid rgba(210, 210, 210, 0.3);
 }
 .redCircleCol{
     border-radius: 50%;
@@ -84,8 +129,25 @@
     width: 78px;
     margin-left: 16px;
 }
-.cartItems{
-    border-bottom: 1px solid rgba(210, 210, 210, 0.3);
+.cartIntroDiv{
+    width: 100%;
+    margin: 0 14px;
+    font-size: 14px;
+    /* gap: 15px; */
+    height: 100% !important;
+    /* background-color: aqua !important; */
+}
+.cartIntroName{
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+.cartIntroPrice{
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.8);
+    padding-bottom: 7px;
+}
+.cartIntroTotalPrice{
+    color: rgb(210, 63, 87);
 }
 .emptCartBag{
     display: flex;
@@ -101,4 +163,12 @@
     color: rgba(128, 128, 128, 0.8);
     padding-top: 15px;
     text-align: center;
+}
+@media screen and (max-width: 380px){
+    .bgGrayBody{
+        width: 0;
+    }
+    .CartMainDiv{
+        width: 100%;
+    }
 }

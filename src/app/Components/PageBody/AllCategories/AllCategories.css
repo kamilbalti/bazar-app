@@ -25,10 +25,16 @@
     align-items: center;
     gap: 7px;
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1279px){
     .AllCatWhiteBg{
         width: 22.85% !important;
         margin: 12px 1.07% !important;
+    }
+}
+@media screen and (max-width: 959px){
+    .AllCatWhiteBg{
+        width: 30% !important;
+        margin: 1.66% !important;
     }
 }
 @media screen and (max-width: 599px){
@@ -37,6 +43,14 @@
     }
     .AllCatWhiteBg{
         width: 45.7% !important;
-        margin: 1.75%;
+        margin: 2.1% !important;
+    }
+}
+@media screen and (max-width: 374px){
+    .AllCatWhiteBg{
+        display: flex;
+        flex-direction: column;
+        width: 43.7% !important;
+        margin: 3% !important;
     }
 }

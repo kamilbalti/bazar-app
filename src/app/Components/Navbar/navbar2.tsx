@@ -14,23 +14,13 @@ const Navbar2 = ({check}: any) => {
     const [ checkOpen, setCheckOpen ] = useState(true)
     const [ width, setWidth ] = useState(0)
     const dispatch = useAppDispatch()
-    const cartOpen: any = useAppSelector((e) => e.cartOpen)
+    const cartData: any = useAppSelector((e) => e.cartData)
     useEffect(() => {
         setWidth(window.innerWidth)
     },[window.innerWidth])
-    // const ItemsQuantity: any = useAppSelector((e) => e.ItemsQuantity)
     const OpenCart = () => {
-        // console.log(ItemsQuantity, " cartOpen ")
-        // alert(cartOpen)
         dispatch(setCartOpen(true))
-        // alert(cartOpen)
-        // alert('check')
-        // if(!checkOpen)
-        // setCheckOpen(true);
-        // alert("testing")
-        // CartInfo.cartOpen = checkOpen;
     }
-    // alert(CartInfo.cartOpen)
     return(
         <div className={check == "Complete" ? "posFixed" : (check == "true" ? "posFixed loading" : "whiteBgColor")}>
             <div className="navbar2">
@@ -49,8 +39,11 @@ const Navbar2 = ({check}: any) => {
                 <div className="navMainIcon">
                     <BsPerson />
                 </div>
-                <div className="navMainIcon" onClick={OpenCart}>
-                    <MdOutlineShoppingBag />
+                <div className="cartImgDiv">
+                    <div className="navMainIcon" onClick={OpenCart}>
+                        <MdOutlineShoppingBag />
+                    </div>
+                    {cartData.length !== 0 ? <p className="cartItemTopNum">{cartData.length}</p>: false}
                 </div>
             </div>
         </div>

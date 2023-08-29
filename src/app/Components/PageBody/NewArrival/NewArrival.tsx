@@ -13,7 +13,7 @@ const NewArrival = () => {
                 <h1 className="flashHead newArrHead">New Arrivals</h1>
             </div> */}
             <div className="featuredDiv row">
-            {NewArrivalData?.map((item: any, index: any) => 
+            {NewArrivalData?.map((item: any, index: number) => 
                 <div className="featuredChildDiv resFeaturedChildDiv">
                     <img className="flashImg" src={item?.ImgSrc} />
                     <p className="featuredPara">{item?.name}</p>

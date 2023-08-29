@@ -92,7 +92,7 @@
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1279px){
     .FooterChildDiv{
         /* height: fit-content; */
         display: flex;
@@ -106,13 +106,15 @@
         width: 50%;
     }
 }
+@media screen and (max-width: 899px){
+    .FooterDiv{
+        padding: 88px 16px;
+        padding-bottom: 80px;
+}
+}
 @media screen and (max-width: 599px){
     .FooterChild{
         width: 100%;
         padding: 10px 0;
-    }
-    .FooterDiv{
-        padding: 88px 16px;
-        padding-bottom: 80px;
     }
 }

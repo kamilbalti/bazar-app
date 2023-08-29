@@ -4,48 +4,58 @@ import { GrClose } from "react-icons/gr"
 import "./Cart.css"
 import { BsHandbag } from "react-icons/bs"
 import { useEffect, useState } from "react"
-import { changeItemsQuantity, setCartOpen } from "../../../Redux-Toolkit/BazarSlice"
+import { changeItemsQuantity, setCartData, setCartOpen, setItemsQuantity } from "../../../Redux-Toolkit/BazarSlice"
 import { useAppDispatch, useAppSelector } from "@/Redux-Toolkit/Hook"
-// import { ItemsQuantity } from "@/app/data/MainData/ItemQuantity"
-const Cart = ({cartInfo}: any) => {
+const Cart = () => {
     const dispatch = useAppDispatch()
-    const cartData: any = useAppSelector((e) => e.cartData)
-    const ItemsQuantity: any = useAppSelector((e) => e.ItemsQuantity)
+    const cartData: Array<Object> = useAppSelector((e) => e.cartData)
+    const ItemsQuantity: Array<any> = useAppSelector((e) => e.ItemsQuantity)
+    const [ totalVal, setTotalVal ] = useState(1)
     const [num, setNum] = useState(0)
+    const [tempVal, setTempVal] = useState(1)
     const closeCart = () => {
         dispatch(setCartOpen(false))
-        // cartInfo.cartOpen = false;
-        // alert('check')
     }
-    let temp = cartData
-    const addNum = (index: any) => {
-        // alert(index)
+    const addNum = (item: any) => {
         setNum(num+1)
-        let cartNum = cartData[index]
-        let indObj = {index1 : cartNum.index1, index2: cartNum.index2, quantity: 1}
+        let indObj = {index1 : item.index1, index2: item.index2, quantity: 1}
         dispatch(changeItemsQuantity(indObj))
+        let tempTotalVal = item.totalVal * (ItemsQuantity[item.index1][item.index2]+1) 
+        setTempVal(tempTotalVal)
     }
-    const subtractNum = (index: any, item2: any) => {
+    const subtractNum = (index2: number, item2: any) => {
+        if(ItemsQuantity[item2.index1][item2.index2] > 1){
+            let tempTotalVal = item2.totalVal * (ItemsQuantity[item2.index1][item2.index2]-1) 
+            setTempVal(tempTotalVal)
+        let indObj = {index1 : item2.index1, index2: item2.index2, quantity: -1}
+        dispatch(changeItemsQuantity(indObj))
+        setNum(num-1)
+    }
+}
+const removeItem = (index: number, item: any) => {
         let temp = cartData
-        if(num > 0){
-        let cartNum = cartData[index]
-        let indObj = {index1 : cartNum.index1, index2: cartNum.index2, quantity: -1}
+        let indObj = {index1 : item.index1, index2: item.index2, quantity: -1 * ItemsQuantity[item.index1][item.index2]}
         dispatch(changeItemsQuantity(indObj))
-        setNum(num-1)}
-        else if(num == 0)
-        temp.filter((item: any, index: any) => item.index1 != item2.index1 && item.index2 != item2.index2 )
-        
+        temp = temp.filter((item2: any, index2: number) => item2 !== item)
+        dispatch(setCartData(temp))
     }
-    // useEffect(() => {
-    //     // cartData.map((item: any, index: any) => console.log(item.index1 + " " + item.index2))
-    // },[cartData])
-
+    useEffect(() => {
+        let tempTotalVal = 0
+        // setTotalVal(1)
+        // setTotalVal( totalVal *
+        cartData.map((item: any, index: number) => {
+            tempTotalVal = tempTotalVal + (item.delVal * ItemsQuantity[item.index1][item.index2])
+        })
+        setTotalVal(tempTotalVal)
+        // )
+    },[cartData, ItemsQuantity])
     return(
         <div className={"row cartFixed"}>
-            <div className={cartData.length !== 0 ? "bgGrayBody" : "bgGrayBody emptGrayBg"}>
+            <div className={cartData.length !== 0 ? "bgGrayBody" : "bgGrayBody emptGrayBg"} onClick={closeCart}>
                 
             </div>
             <div className={cartData.length !== 0 ? "CartMainDiv" : "CartMainDiv emptCartFixed"}>
+            <div className={cartData.length >= 4 ?'cartScrollDiv': "noScrollDiv"}>
             <div className="row rowItemsDiv">
             <div className="rowFirstItemsDiv">
             <div className="shoppingBagIcon">
@@ -62,14 +72,20 @@ const Cart = ({cartInfo}: any) => {
             {cartData?.map((item: any, index: number) => 
             <div className="row cartItems">
                 <div className="">
-                    {/* <p onClick={subtractNum} className={ item?.num != 0 ? "redCol minusSign" : 'redCol minusSign hidden'}>–</p> */}
-                    {/* <p className={item?.num != 0 ? "blackNum" : "blackNum hidden"}>{item.num}</p> */}
-                    <p onClick={() => addNum(index)} className="redCol redCircleCol">+</p>
+                    <p onClick={() => addNum(item)} className="redCol redCircleCol">+</p>
                     <p className="cartItemNum">{ItemsQuantity[item.index1][item.index2]}</p>
                     <p onClick={() => subtractNum(index, item)} className={`redCol minusCircle redCircleCol 
-                    ${ItemsQuantity[item.index1][item.index2] != 0 ? " " : " blackCircleCol"}`}>–</p>
+                    ${ItemsQuantity[item.index1][item.index2] != 1 ? " " : " blackCircleCol"}`}>–</p>
                 </div>
                 <img className="cartItemImg" src={item.ImgSrc}/>
+                <div className="cartIntroDiv">
+                    <p className="cartIntroName">{item.name}</p>
+                    <p className="cartIntroPrice">${item.delVal} x {ItemsQuantity[item.index1][item.index2]}</p>
+                    <p className="cartIntroTotalPrice">{"$" + (item.delVal)*ItemsQuantity[item.index1][item.index2] + ".00"}</p>
+                </div>
+                <div className="closeIcon closeChildIcon">
+                    <GrClose onClick={() => removeItem(index, item)}/>
+                </div>
             </div>    
             )}
             </div>
@@ -79,6 +95,13 @@ const Cart = ({cartInfo}: any) => {
             <p className="emptCartPara">Your shopping bag is empty.<br/>Start shopping</p>    
             </div>}
             </div>
+            {cartData.length > 0 ?
+                <div className="downButton">
+                    <button className="cartDownButton checkOutBut">Checkout Now{` ($${totalVal}.00)`}</button>
+                    <button className="cartDownButton viewCartBut">View Cart</button>
+                </div>
+            : false}
+        </div>
         </div>
     )
 }

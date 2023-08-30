@@ -26,9 +26,6 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.emptGrayBg{
-    /* width: 86%; */
-}
 .rowFirstItemsDiv{
     display: flex;
     align-items: center;

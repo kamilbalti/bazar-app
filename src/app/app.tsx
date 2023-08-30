@@ -21,9 +21,7 @@ useEffect(() => {
   return (
     <div>
       <Navbar />
-      {/* <Cart /> */}
       {cartOpen ? <Cart /> : false  }
-      {/* <img src={`../../../`}/> */}
       <Header />
       <PageBody />
       <Footer />

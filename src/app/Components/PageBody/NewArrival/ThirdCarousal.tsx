@@ -8,7 +8,7 @@ const ThirdCarousal = () => {
     const [val, setVal] = useState(11)
     const [temp, setTemp] = useState(3)
     useEffect(() => {
-        if(window !== undefined){
+        if( typeof window !== 'undefined'){
         setVal(window.innerWidth >= 949 ? 11 : 11.11) 
         setTemp(window.innerWidth >= 950 ? 3 : ((window.innerWidth >= 650 ? 5 : (window.innerWidth >= 500 ? 7 : 8))))
     }})

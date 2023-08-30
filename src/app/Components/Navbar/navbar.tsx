@@ -7,7 +7,7 @@ import BottomNavbar from "./BottomNavbar";
 
 const Navbar = () => {
     const [ check, setCheck ]: any = useState(false)
-    if(typeof window !== undefined){
+    if(typeof window !== 'undefined'){
     window.onscroll = () => {
         if(window.scrollY >= 360 && check != 'Complete')
         {
@@ -25,7 +25,7 @@ const Navbar = () => {
     }
     
     useEffect(() => {
-        if(typeof window !== undefined){
+        if(typeof window !== 'undefined'){
         if(window.scrollY >= 360)
         {
             setCheck("true")

@@ -17,10 +17,10 @@ const Cart = () => {
     // let cartWidth = document.getElementById('cart')?.clientWidth
     let cartWidth;
     useEffect(() => {
-        if(window !== undefined){
+        if(typeof window !== 'undefined'){
         cartWidth = document.getElementById('cart')?.clientWidth
         setBgGrayWidth(window.innerWidth - Number(cartWidth))}
-    }, [window !== undefined && window.innerWidth])
+    }, [typeof window !== 'undefined' && window.innerWidth])
     const closeCart = () => {
         dispatch(setCartOpen(false))
     }

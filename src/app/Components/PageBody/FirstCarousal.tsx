@@ -6,7 +6,7 @@ const FirstCarousal = () => {
     const [val, setVal] = useState(12.5)
     const [temp, setTemp] = useState(4)
     useEffect(() => {
-        if(window !== undefined){
+        if(typeof window !== 'undefined'){
         setVal(window.innerWidth >= 949 ? 12.4 : 12.5) 
         setTemp(window.innerWidth >= 950 ? 4 : ((window.innerWidth >= 650 ? 5 : (window.innerWidth >= 500 ? 6 : 7))))
     }})

@@ -7,8 +7,8 @@ import BottomNavbar from "./BottomNavbar";
 
 const Navbar = () => {
     const [ check, setCheck ]: any = useState(false)
+    if(typeof window !== undefined){
     window.onscroll = () => {
-        if(typeof window !== undefined){
         if(window.scrollY >= 360 && check != 'Complete')
         {
             setCheck("true")

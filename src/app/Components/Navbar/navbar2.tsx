@@ -16,8 +16,9 @@ const Navbar2 = ({check}: any) => {
     const dispatch = useDispatch()
     const cartData: any = useSelector((e: any) => e.cartData)
     useEffect(() => {
+        if(window !== undefined)
         setWidth(window.innerWidth)
-    },[window.innerWidth])
+    },[window !== undefined && window.innerWidth])
     const OpenCart = () => {
         dispatch(setCartOpen(true))
     }

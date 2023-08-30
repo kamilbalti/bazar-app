@@ -2,14 +2,13 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import AllStar from "./AllStar"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { addItems, changeItemsQuantity, setCartData } from "../../../Redux-Toolkit/BazarSlice"
-import { useAppDispatch, useAppSelector } from "../../../Redux-Toolkit/Hook"
 const Box = ({item, check, index1, index2}: any) => {
-    const dispatch = useAppDispatch()
+    const dispatch = useDispatch()
     const [num, setNum] = useState(0)
-    const cartData: any = useAppSelector((e) => e.cartData)
-    const ItemsQuantity: any = useAppSelector((e) => e.ItemsQuantity)
+    const cartData: any = useSelector((e: any) => e.cartData)
+    const ItemsQuantity: any = useSelector((e: any) => e.ItemsQuantity)
     const addNum = () => {
         let objInd = {index1: index1, index2: index2, quantity: 1}
         dispatch(changeItemsQuantity(objInd))

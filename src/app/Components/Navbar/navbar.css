@@ -33,6 +33,7 @@ body{
 .navbarChildDiv{
     max-width: 1280px;
     margin: auto;
+    position: relative;
 }
 .firstNavParaDiv{
     color: white;
@@ -168,7 +169,7 @@ button{
 }
 .AllOptionDiv{
     position: absolute;
-    top: 180px;
+    top: 140px;
     display: flex;
     /* width: 100%; */
     display: flex;
@@ -535,7 +536,7 @@ button{
 }
 .dropAbsDiv{
     position: absolute;
-    top: 180px;
+    top: 140px;
     display: flex;
     flex-direction: row;
     /* background-color: white; */
@@ -550,7 +551,7 @@ button{
 
 .Home{
     position: absolute;
-    left: 36%;
+    left: 450px;
 }
 .User{
     right: 11.35%;
@@ -559,14 +560,15 @@ button{
     gap: 10px;
 }
 .Vendor{
-    right: 0.4%;
+    right: -30px;
     display: flex;
     flex-direction: row-reverse;
     gap: 10px;
 }
 .Mega{
-    top: 180px;
-    left: 12%;
+    top: 140px;
+    left: 130px;
+    /* left: 12%; */
     z-index: 50;
     height: 410px;
     width: 965px;

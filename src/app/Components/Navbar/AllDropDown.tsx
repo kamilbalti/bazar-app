@@ -2,19 +2,20 @@ import { useState, useEffect } from "react"
 import { NavAllData } from "@/app/data/NavData/NavAllData"
 import Heading from "./Heading"
 import DropDown from "./DropDown"
-import { useAppSelector } from "@/Redux-Toolkit/Hook"
+import { useSelector } from "react-redux"
 
 const AllDropDown = () => {
-    const [ select, setSelect ] = useState()
+    const [ select, setSelect ]: any = useState(10)
     const [name, setName] = useState("");
     const [num, setNum] = useState(0)
-    const cartOpen: any = useAppSelector((e) => e.cartOpen)
+    const cartOpen: any = useSelector((e: any) => e.cartOpen)
     const showDetail = (index: any) => {
         if(!cartOpen)
         num % 2 == 1?
         setName('AllOptionDiv hideOption'):
         setName('AllOptionDiv')
         setNum(num+1)
+        if(select !== false || select == 0)
         setSelect(index)
     }
     useEffect(() => {

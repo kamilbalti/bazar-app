@@ -3,18 +3,18 @@ import React, { useEffect, useState } from "react";
 import SearchingDiv from "./SearchingDiv";
 import { BsChevronDown, BsPerson } from "react-icons/bs"
 import { MdOutlineShoppingBag } from "react-icons/md"
-import { CartInfo } from "../../data/MainData/MainData";
-import Car from "../PageBody/Car/Car";
+// import { CartInfo } from "../../data/MainData/MainData";
+// import Car from "../PageBody/Car/Car";
 import { BiSolidCategory } from "react-icons/bi";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { setCartOpen } from "../../../Redux-Toolkit/BazarSlice";
+import { useDispatch, useSelector } from "react-redux";
 // import { useSelector } from "react-redux";
-import { useAppDispatch, useAppSelector } from "../../../Redux-Toolkit/Hook";
 const Navbar2 = ({check}: any) => {
     const [ checkOpen, setCheckOpen ] = useState(true)
     const [ width, setWidth ] = useState(0)
-    const dispatch = useAppDispatch()
-    const cartData: any = useAppSelector((e) => e.cartData)
+    const dispatch = useDispatch()
+    const cartData: any = useSelector((e: any) => e.cartData)
     useEffect(() => {
         setWidth(window.innerWidth)
     },[window.innerWidth])

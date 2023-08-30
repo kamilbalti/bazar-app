@@ -5,6 +5,7 @@ import React, {useState } from "react"
 import HeaderItem from "../Header/HeaderItem"
 import SecondCarousalBox from "./SecondCarousalBox"
 import ThirdCarousalBox from "./ThirdCarousalBox"
+import { useSwipeable } from "react-swipeable"
 
 const Carousal = ({carNum, val, carousalData, temp}: any) => {
     const [ num, setNum ] = useState(0)

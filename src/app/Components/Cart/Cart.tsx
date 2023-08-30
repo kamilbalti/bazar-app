@@ -5,14 +5,21 @@ import "./Cart.css"
 import { BsHandbag } from "react-icons/bs"
 import { useEffect, useState } from "react"
 import { changeItemsQuantity, setCartData, setCartOpen, setItemsQuantity } from "../../../Redux-Toolkit/BazarSlice"
-import { useAppDispatch, useAppSelector } from "@/Redux-Toolkit/Hook"
+import { useDispatch, useSelector } from "react-redux"
 const Cart = () => {
-    const dispatch = useAppDispatch()
-    const cartData: Array<Object> = useAppSelector((e) => e.cartData)
-    const ItemsQuantity: Array<any> = useAppSelector((e) => e.ItemsQuantity)
+    const dispatch = useDispatch()
+    const cartData: Array<Object> = useSelector((e: any) => e.cartData)
+    const ItemsQuantity: Array<any> = useSelector((e: any) => e.ItemsQuantity)
     const [ totalVal, setTotalVal ] = useState(1)
     const [num, setNum] = useState(0)
     const [tempVal, setTempVal] = useState(1)
+    const [ bgGrayWidth, setBgGrayWidth ] = useState(0)
+    // let cartWidth = document.getElementById('cart')?.clientWidth
+    let cartWidth;
+    useEffect(() => {
+        cartWidth = document.getElementById('cart')?.clientWidth
+        setBgGrayWidth(window.innerWidth - Number(cartWidth))
+    }, [window.innerWidth])
     const closeCart = () => {
         dispatch(setCartOpen(false))
     }
@@ -51,10 +58,10 @@ const removeItem = (index: number, item: any) => {
     },[cartData, ItemsQuantity])
     return(
         <div className={"row cartFixed"}>
-            <div className={cartData.length !== 0 ? "bgGrayBody" : "bgGrayBody emptGrayBg"} onClick={closeCart}>
+            <div style={{width: bgGrayWidth+"px"}} className={cartData.length !== 0 ? "bgGrayBody" : "bgGrayBody emptGrayBg"} onClick={closeCart}>
                 
             </div>
-            <div className={cartData.length !== 0 ? "CartMainDiv" : "CartMainDiv emptCartFixed"}>
+            <div id="cart" className={cartData.length !== 0 ? "CartMainDiv" : "CartMainDiv emptCartFixed"}>
             <div className={cartData.length >= 4 ?'cartScrollDiv': "noScrollDiv"}>
             <div className="row rowItemsDiv">
             <div className="rowFirstItemsDiv">

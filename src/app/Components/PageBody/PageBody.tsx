@@ -14,7 +14,6 @@ import MoreForYou from "./MoreForYou/MoreForYou"
 import AdvancedFeature from "./AdvancedFeature/AdvancedFeature"
 
 const PageBody = () => {
-    // const {FirstCarousalData}: any = useSelector((e) => e)
     return(
         <div className="PageBody">
             <FlashDeal />

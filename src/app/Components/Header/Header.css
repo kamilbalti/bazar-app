@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 .radioBut{
-    margin-top: 40px;
-    position: absolute;
-    bottom: -15px;
+    margin-top: 20px;
+    /* position: absolute; */
+    /* bottom: -15px; */
 }
 .radio{
     fill: inherit;

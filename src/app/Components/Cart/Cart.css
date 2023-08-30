@@ -22,12 +22,12 @@
 
 .bgGrayBody{
     /* width: calc(100%-380px); */
-    width: 73%;
+    /* width: 73%; */
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 .emptGrayBg{
-    width: 86%;
+    /* width: 86%; */
 }
 .rowFirstItemsDiv{
     display: flex;
@@ -152,9 +152,9 @@ button{
 .emptCartBag{
     display: flex;
     flex-direction: column;
-    /* height: 100%; */
-    margin: 132px 0;
-    /* justify-content: center; */
+    height: 100%;
+    /* margin: 132px 0; */
+    justify-content: center;
     /* align-content: center; */
 }
 .emptCartPara{
@@ -163,12 +163,4 @@ button{
     color: rgba(128, 128, 128, 0.8);
     padding-top: 15px;
     text-align: center;
-}
-@media screen and (max-width: 380px){
-    .bgGrayBody{
-        width: 0;
-    }
-    .CartMainDiv{
-        width: 100%;
-    }
 }

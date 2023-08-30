@@ -3,10 +3,10 @@ import DropDown from "./DropDown"
 import Heading from "./Heading"
 import { AiOutlineSearch } from "react-icons/ai"
 import { useEffect, useState } from "react"
-import { useAppSelector } from "@/Redux-Toolkit/Hook"
+import { useSelector } from "react-redux"
 
 const SearchingDiv = () => {
-    const cartOpen: any = useAppSelector((e) => e.cartOpen)
+    const cartOpen: any = useSelector((e: any) => e.cartOpen)
     const [name, setName] = useState("");
     const [num, setNum] = useState(0)
     const [ val, setVal ] = useState("All Categories")

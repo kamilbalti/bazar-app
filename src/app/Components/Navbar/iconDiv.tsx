@@ -4,15 +4,15 @@ import { PiInstagramLogo } from "react-icons/pi"
 import Heading from "./Heading"
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
 import { useEffect, useState } from "react"
-import { useAppSelector } from "@/Redux-Toolkit/Hook"
 import DropDown from "./DropDown"
 import { NavLangData } from "@/app/data/NavData/NavLangData"
+import { useSelector } from "react-redux"
 
 const IconDiv = ({showMoreInfo, setShowMoreInfo}: any) => {
     const [name, setName] = useState("");
     const [num, setNum] = useState(0)
     const [ val, setVal ] = useState("DE")
-    const cartOpen: any = useAppSelector((e) => e.cartOpen)
+    const cartOpen: any = useSelector((e: any) => e.cartOpen)
     const showDetail = () => {
         if(!cartOpen)
         (num % 2 == 1)?

@@ -5,14 +5,14 @@ import Heading from "./Heading"
 import { NavCategoriesData } from "@/app/data/NavData/NavCategoriesData"
 import { useState, useEffect } from "react"
 import DropDown from "./DropDown"
-import { useAppSelector } from "@/Redux-Toolkit/Hook"
 import { NavAllData } from "@/app/data/NavData/NavAllData"
 import AllDropDown from "./AllDropDown"
+import { useSelector } from "react-redux"
 
 const Navbar3 = ({check}: any) => {
     const [name, setName] = useState("");
     const [num, setNum] = useState(0)
-    const cartOpen: any = useAppSelector((e) => e.cartOpen)
+    const cartOpen: any = useSelector((e: any) => e.cartOpen)
     const showDetail = () => {
         if(!cartOpen)
         num % 2 == 1?
